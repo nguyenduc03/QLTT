@@ -44,7 +44,7 @@ namespace QLTT
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconButtonSearch = new FontAwesome.Sharp.IconButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.paneContent = new System.Windows.Forms.Panel();
             this.panel_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -284,13 +284,13 @@ namespace QLTT
             this.textBox2.TabStop = false;
             this.textBox2.Text = "  Tìm Kiếm";
             // 
-            // panel5
+            // paneContent
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(222, 100);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(718, 390);
-            this.panel5.TabIndex = 4;
+            this.paneContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneContent.Location = new System.Drawing.Point(222, 100);
+            this.paneContent.Name = "paneContent";
+            this.paneContent.Size = new System.Drawing.Size(718, 390);
+            this.paneContent.TabIndex = 4;
             // 
             // Form1
             // 
@@ -298,7 +298,7 @@ namespace QLTT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(940, 490);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.paneContent);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_Menu);
@@ -333,7 +333,7 @@ namespace QLTT
         private System.Windows.Forms.Panel panel4;
         private FontAwesome.Sharp.IconButton iconButtonSearch;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel paneContent;
     }
 }
 
