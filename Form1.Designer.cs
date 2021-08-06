@@ -253,6 +253,7 @@ namespace QLTT
             // 
             // iconButtonSearch
             // 
+            this.iconButtonSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.iconButtonSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.iconButtonSearch.FlatAppearance.BorderSize = 0;
             this.iconButtonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -273,6 +274,7 @@ namespace QLTT
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBox2.Location = new System.Drawing.Point(3, 32);
