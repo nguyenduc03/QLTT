@@ -198,7 +198,7 @@ namespace QLTT
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker.Location = new System.Drawing.Point(141, 113);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(224, 23);
+            this.dateTimePicker.Size = new System.Drawing.Size(123, 23);
             this.dateTimePicker.TabIndex = 1;
             // 
             // panel4
@@ -315,7 +315,7 @@ namespace QLTT
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(583, 22);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 3);
+            this.panel6.Size = new System.Drawing.Size(150, 2);
             this.panel6.TabIndex = 15;
             // 
             // textBox7

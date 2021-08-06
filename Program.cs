@@ -17,7 +17,7 @@ namespace QLTT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LapHoaDon());
+            Application.Run(new QuanLyNhanVien());
         }
     }
 }
