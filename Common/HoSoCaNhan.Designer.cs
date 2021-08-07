@@ -32,23 +32,23 @@ namespace QLTT.Controls
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.HinhNV = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelChucNang = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelMatKhau = new System.Windows.Forms.Label();
             this.DateNV = new System.Windows.Forms.DateTimePicker();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxMatKhau = new System.Windows.Forms.TextBox();
+            this.labelNgaySinh = new System.Windows.Forms.Label();
             this.TBEmailNV = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
             this.TBSDTNV = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelSDT = new System.Windows.Forms.Label();
             this.TBTenNV = new System.Windows.Forms.TextBox();
             this.labelTênNV = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -56,7 +56,7 @@ namespace QLTT.Controls
             this.BTNHuy = new FontAwesome.Sharp.IconButton();
             this.BTNReset = new FontAwesome.Sharp.IconButton();
             this.panelTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HinhNV)).BeginInit();
             this.panelChucNang.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -75,7 +75,7 @@ namespace QLTT.Controls
             // 
             this.panelTitle.BackColor = System.Drawing.Color.Silver;
             this.panelTitle.Controls.Add(this.textBox2);
-            this.panelTitle.Controls.Add(this.pictureBox1);
+            this.panelTitle.Controls.Add(this.HinhNV);
             this.panelTitle.Controls.Add(this.textBox1);
             this.panelTitle.Controls.Add(this.panel3);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -101,17 +101,17 @@ namespace QLTT.Controls
             this.textBox2.Text = "MÃ NV";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // HinhNV
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::QLTT.Properties.Resources._1111;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.HinhNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.HinhNV.Image = global::QLTT.Properties.Resources._1111;
+            this.HinhNV.Location = new System.Drawing.Point(95, 9);
+            this.HinhNV.Name = "HinhNV";
+            this.HinhNV.Size = new System.Drawing.Size(146, 135);
+            this.HinhNV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HinhNV.TabIndex = 0;
+            this.HinhNV.TabStop = false;
+            this.HinhNV.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox1
             // 
@@ -153,18 +153,18 @@ namespace QLTT.Controls
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.labelMatKhau);
             this.panel4.Controls.Add(this.DateNV);
             this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.textBoxMatKhau);
+            this.panel4.Controls.Add(this.labelNgaySinh);
             this.panel4.Controls.Add(this.TBEmailNV);
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.labelEmail);
             this.panel4.Controls.Add(this.TBSDTNV);
             this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.labelSDT);
             this.panel4.Controls.Add(this.TBTenNV);
             this.panel4.Controls.Add(this.labelTênNV);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -173,17 +173,17 @@ namespace QLTT.Controls
             this.panel4.Size = new System.Drawing.Size(760, 223);
             this.panel4.TabIndex = 0;
             // 
-            // label5
+            // labelMatKhau
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 18);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Mật Khẩu : ";
+            this.labelMatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelMatKhau.AutoSize = true;
+            this.labelMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMatKhau.ForeColor = System.Drawing.Color.White;
+            this.labelMatKhau.Location = new System.Drawing.Point(32, 180);
+            this.labelMatKhau.Name = "labelMatKhau";
+            this.labelMatKhau.Size = new System.Drawing.Size(94, 18);
+            this.labelMatKhau.TabIndex = 35;
+            this.labelMatKhau.Text = "Mật Khẩu : ";
             // 
             // DateNV
             // 
@@ -212,30 +212,30 @@ namespace QLTT.Controls
             this.panel5.Size = new System.Drawing.Size(200, 2);
             this.panel5.TabIndex = 31;
             // 
-            // textBox4
+            // textBoxMatKhau
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(128, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(109, 17);
-            this.textBox4.TabIndex = 5;
-            this.textBox4.Text = "0835866056";
+            this.textBoxMatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.textBoxMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMatKhau.ForeColor = System.Drawing.Color.White;
+            this.textBoxMatKhau.Location = new System.Drawing.Point(128, 182);
+            this.textBoxMatKhau.Name = "textBoxMatKhau";
+            this.textBoxMatKhau.Size = new System.Drawing.Size(109, 17);
+            this.textBoxMatKhau.TabIndex = 5;
+            this.textBoxMatKhau.Text = "0835866056";
             // 
-            // label4
+            // labelNgaySinh
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(455, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 18);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Ngày Sinh : ";
+            this.labelNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelNgaySinh.AutoSize = true;
+            this.labelNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNgaySinh.ForeColor = System.Drawing.Color.White;
+            this.labelNgaySinh.Location = new System.Drawing.Point(455, 22);
+            this.labelNgaySinh.Name = "labelNgaySinh";
+            this.labelNgaySinh.Size = new System.Drawing.Size(99, 18);
+            this.labelNgaySinh.TabIndex = 27;
+            this.labelNgaySinh.Text = "Ngày Sinh : ";
             // 
             // TBEmailNV
             // 
@@ -260,17 +260,17 @@ namespace QLTT.Controls
             this.panel6.Size = new System.Drawing.Size(200, 2);
             this.panel6.TabIndex = 32;
             // 
-            // label3
+            // labelEmail
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(455, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Email : ";
+            this.labelEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.ForeColor = System.Drawing.Color.White;
+            this.labelEmail.Location = new System.Drawing.Point(455, 107);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(65, 18);
+            this.labelEmail.TabIndex = 28;
+            this.labelEmail.Text = "Email : ";
             // 
             // TBSDTNV
             // 
@@ -294,17 +294,17 @@ namespace QLTT.Controls
             this.panel8.Size = new System.Drawing.Size(200, 2);
             this.panel8.TabIndex = 33;
             // 
-            // label2
+            // labelSDT
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(32, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 18);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Số Điện Thoại : ";
+            this.labelSDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelSDT.AutoSize = true;
+            this.labelSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSDT.ForeColor = System.Drawing.Color.White;
+            this.labelSDT.Location = new System.Drawing.Point(32, 107);
+            this.labelSDT.Name = "labelSDT";
+            this.labelSDT.Size = new System.Drawing.Size(130, 18);
+            this.labelSDT.TabIndex = 29;
+            this.labelSDT.Text = "Số Điện Thoại : ";
             // 
             // TBTenNV
             // 
@@ -413,7 +413,7 @@ namespace QLTT.Controls
             this.ShowIcon = false;
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HinhNV)).EndInit();
             this.panelChucNang.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -426,7 +426,7 @@ namespace QLTT.Controls
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox HinhNV;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
@@ -436,18 +436,18 @@ namespace QLTT.Controls
         private FontAwesome.Sharp.IconButton BTNHuy;
         private FontAwesome.Sharp.IconButton BTNReset;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelMatKhau;
         private System.Windows.Forms.DateTimePicker DateNV;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxMatKhau;
+        private System.Windows.Forms.Label labelNgaySinh;
         private System.Windows.Forms.TextBox TBEmailNV;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox TBSDTNV;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSDT;
         private System.Windows.Forms.TextBox TBTenNV;
         private System.Windows.Forms.Label labelTênNV;
     }

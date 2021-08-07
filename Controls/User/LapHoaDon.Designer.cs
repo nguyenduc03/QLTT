@@ -50,10 +50,6 @@ namespace QLTT
             this.textBoxTongTien = new System.Windows.Forms.TextBox();
             this.labelTongTien = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.BTNHuy = new FontAwesome.Sharp.IconButton();
-            this.BTNInHD = new FontAwesome.Sharp.IconButton();
-            this.BTNLuu = new FontAwesome.Sharp.IconButton();
-            this.BTNThemThuoc = new FontAwesome.Sharp.IconButton();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBoxDonGia = new System.Windows.Forms.TextBox();
@@ -70,6 +66,10 @@ namespace QLTT
             this.comboBoxMaThuoc = new System.Windows.Forms.ComboBox();
             this.label_MaThuoc = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BTNHuy = new FontAwesome.Sharp.IconButton();
+            this.BTNInHD = new FontAwesome.Sharp.IconButton();
+            this.BTNLuu = new FontAwesome.Sharp.IconButton();
+            this.BTNThemThuoc = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -102,8 +102,9 @@ namespace QLTT
             this.splitContainer1.Panel2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(800, 551);
-            this.splitContainer1.SplitterDistance = 175;
+            this.splitContainer1.SplitterDistance = 181;
             this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // panelTitel
             // 
@@ -149,12 +150,12 @@ namespace QLTT
             this.groupBoxInfo.Controls.Add(this.label_MaNV);
             this.groupBoxInfo.Controls.Add(this.labelTenNV);
             this.groupBoxInfo.Controls.Add(this.label_MaHD);
-            this.groupBoxInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxInfo.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBoxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxInfo.ForeColor = System.Drawing.Color.White;
-            this.groupBoxInfo.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxInfo.Location = new System.Drawing.Point(0, 46);
             this.groupBoxInfo.Name = "groupBoxInfo";
-            this.groupBoxInfo.Size = new System.Drawing.Size(800, 175);
+            this.groupBoxInfo.Size = new System.Drawing.Size(800, 135);
             this.groupBoxInfo.TabIndex = 1;
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "Thông Tin Chung";
@@ -166,7 +167,7 @@ namespace QLTT
             this.textBoxTenNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTenNV.ForeColor = System.Drawing.Color.White;
-            this.textBoxTenNV.Location = new System.Drawing.Point(517, 110);
+            this.textBoxTenNV.Location = new System.Drawing.Point(517, 81);
             this.textBoxTenNV.Multiline = true;
             this.textBoxTenNV.Name = "textBoxTenNV";
             this.textBoxTenNV.ReadOnly = true;
@@ -182,7 +183,7 @@ namespace QLTT
             this.comboBoxMaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxMaNV.ForeColor = System.Drawing.Color.White;
             this.comboBoxMaNV.FormattingEnabled = true;
-            this.comboBoxMaNV.Location = new System.Drawing.Point(512, 66);
+            this.comboBoxMaNV.Location = new System.Drawing.Point(512, 37);
             this.comboBoxMaNV.Name = "comboBoxMaNV";
             this.comboBoxMaNV.Size = new System.Drawing.Size(224, 24);
             this.comboBoxMaNV.TabIndex = 0;
@@ -196,7 +197,7 @@ namespace QLTT
             this.dateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dateTimePicker.CalendarTrailingForeColor = System.Drawing.Color.Green;
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker.Location = new System.Drawing.Point(141, 113);
+            this.dateTimePicker.Location = new System.Drawing.Point(141, 84);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(123, 23);
             this.dateTimePicker.TabIndex = 1;
@@ -205,7 +206,7 @@ namespace QLTT
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(460, 133);
+            this.panel4.Location = new System.Drawing.Point(460, 104);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(222, 2);
             this.panel4.TabIndex = 10;
@@ -214,7 +215,7 @@ namespace QLTT
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(64, 88);
+            this.panel1.Location = new System.Drawing.Point(64, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 2);
             this.panel1.TabIndex = 9;
@@ -226,7 +227,7 @@ namespace QLTT
             this.textBoxMaHD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMaHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMaHD.ForeColor = System.Drawing.Color.White;
-            this.textBoxMaHD.Location = new System.Drawing.Point(140, 66);
+            this.textBoxMaHD.Location = new System.Drawing.Point(140, 37);
             this.textBoxMaHD.Multiline = true;
             this.textBoxMaHD.Name = "textBoxMaHD";
             this.textBoxMaHD.ReadOnly = true;
@@ -240,7 +241,7 @@ namespace QLTT
             this.label_NgayBan.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label_NgayBan.AutoSize = true;
             this.label_NgayBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_NgayBan.Location = new System.Drawing.Point(38, 118);
+            this.label_NgayBan.Location = new System.Drawing.Point(38, 89);
             this.label_NgayBan.Name = "label_NgayBan";
             this.label_NgayBan.Size = new System.Drawing.Size(70, 17);
             this.label_NgayBan.TabIndex = 7;
@@ -251,7 +252,7 @@ namespace QLTT
             this.label_MaNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_MaNV.AutoSize = true;
             this.label_MaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MaNV.Location = new System.Drawing.Point(410, 74);
+            this.label_MaNV.Location = new System.Drawing.Point(410, 45);
             this.label_MaNV.Name = "label_MaNV";
             this.label_MaNV.Size = new System.Drawing.Size(97, 17);
             this.label_MaNV.TabIndex = 5;
@@ -263,7 +264,7 @@ namespace QLTT
             this.labelTenNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTenNV.AutoSize = true;
             this.labelTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenNV.Location = new System.Drawing.Point(410, 113);
+            this.labelTenNV.Location = new System.Drawing.Point(410, 84);
             this.labelTenNV.Name = "labelTenNV";
             this.labelTenNV.Size = new System.Drawing.Size(101, 17);
             this.labelTenNV.TabIndex = 3;
@@ -275,7 +276,7 @@ namespace QLTT
             this.label_MaHD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label_MaHD.AutoSize = true;
             this.label_MaHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MaHD.Location = new System.Drawing.Point(38, 69);
+            this.label_MaHD.Location = new System.Drawing.Point(38, 40);
             this.label_MaHD.Name = "label_MaHD";
             this.label_MaHD.Size = new System.Drawing.Size(87, 17);
             this.label_MaHD.TabIndex = 2;
@@ -292,7 +293,7 @@ namespace QLTT
             this.groupBoxTTCT.ForeColor = System.Drawing.Color.White;
             this.groupBoxTTCT.Location = new System.Drawing.Point(0, 0);
             this.groupBoxTTCT.Name = "groupBoxTTCT";
-            this.groupBoxTTCT.Size = new System.Drawing.Size(800, 372);
+            this.groupBoxTTCT.Size = new System.Drawing.Size(800, 366);
             this.groupBoxTTCT.TabIndex = 0;
             this.groupBoxTTCT.TabStop = false;
             this.groupBoxTTCT.Text = "Thông Tin Chi Tiết";
@@ -304,7 +305,7 @@ namespace QLTT
             this.panel5.Controls.Add(this.textBoxTongTien);
             this.panel5.Controls.Add(this.labelTongTien);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(3, 306);
+            this.panel5.Location = new System.Drawing.Point(3, 300);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(794, 25);
             this.panel5.TabIndex = 18;
@@ -351,85 +352,10 @@ namespace QLTT
             this.panel9.Controls.Add(this.BTNLuu);
             this.panel9.Controls.Add(this.BTNThemThuoc);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(3, 331);
+            this.panel9.Location = new System.Drawing.Point(3, 325);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(794, 38);
             this.panel9.TabIndex = 17;
-            // 
-            // BTNHuy
-            // 
-            this.BTNHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNHuy.FlatAppearance.BorderSize = 0;
-            this.BTNHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNHuy.ForeColor = System.Drawing.Color.White;
-            this.BTNHuy.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.BTNHuy.IconColor = System.Drawing.Color.White;
-            this.BTNHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNHuy.IconSize = 40;
-            this.BTNHuy.Location = new System.Drawing.Point(239, 0);
-            this.BTNHuy.Name = "BTNHuy";
-            this.BTNHuy.Size = new System.Drawing.Size(146, 35);
-            this.BTNHuy.TabIndex = 7;
-            this.BTNHuy.Text = "Hủy";
-            this.BTNHuy.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNHuy.UseVisualStyleBackColor = true;
-            // 
-            // BTNInHD
-            // 
-            this.BTNInHD.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNInHD.FlatAppearance.BorderSize = 0;
-            this.BTNInHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNInHD.ForeColor = System.Drawing.Color.White;
-            this.BTNInHD.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.BTNInHD.IconColor = System.Drawing.Color.White;
-            this.BTNInHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNInHD.IconSize = 40;
-            this.BTNInHD.Location = new System.Drawing.Point(639, 0);
-            this.BTNInHD.Name = "BTNInHD";
-            this.BTNInHD.Size = new System.Drawing.Size(146, 35);
-            this.BTNInHD.TabIndex = 9;
-            this.BTNInHD.Text = "In Hóa Đơn";
-            this.BTNInHD.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNInHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNInHD.UseVisualStyleBackColor = true;
-            // 
-            // BTNLuu
-            // 
-            this.BTNLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNLuu.FlatAppearance.BorderSize = 0;
-            this.BTNLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNLuu.ForeColor = System.Drawing.Color.White;
-            this.BTNLuu.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.BTNLuu.IconColor = System.Drawing.Color.White;
-            this.BTNLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNLuu.IconSize = 40;
-            this.BTNLuu.Location = new System.Drawing.Point(457, 3);
-            this.BTNLuu.Name = "BTNLuu";
-            this.BTNLuu.Size = new System.Drawing.Size(146, 32);
-            this.BTNLuu.TabIndex = 8;
-            this.BTNLuu.Text = "Lưu";
-            this.BTNLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNLuu.UseVisualStyleBackColor = true;
-            // 
-            // BTNThemThuoc
-            // 
-            this.BTNThemThuoc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNThemThuoc.FlatAppearance.BorderSize = 0;
-            this.BTNThemThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNThemThuoc.ForeColor = System.Drawing.Color.White;
-            this.BTNThemThuoc.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.BTNThemThuoc.IconColor = System.Drawing.Color.White;
-            this.BTNThemThuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNThemThuoc.IconSize = 40;
-            this.BTNThemThuoc.Location = new System.Drawing.Point(18, 0);
-            this.BTNThemThuoc.Name = "BTNThemThuoc";
-            this.BTNThemThuoc.Size = new System.Drawing.Size(146, 35);
-            this.BTNThemThuoc.TabIndex = 6;
-            this.BTNThemThuoc.Text = "Thêm";
-            this.BTNThemThuoc.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNThemThuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNThemThuoc.UseVisualStyleBackColor = true;
             // 
             // panel11
             // 
@@ -610,9 +536,84 @@ namespace QLTT
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(794, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 344);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
+            // 
+            // BTNHuy
+            // 
+            this.BTNHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNHuy.FlatAppearance.BorderSize = 0;
+            this.BTNHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNHuy.ForeColor = System.Drawing.Color.White;
+            this.BTNHuy.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BTNHuy.IconColor = System.Drawing.Color.White;
+            this.BTNHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNHuy.IconSize = 40;
+            this.BTNHuy.Location = new System.Drawing.Point(239, 0);
+            this.BTNHuy.Name = "BTNHuy";
+            this.BTNHuy.Size = new System.Drawing.Size(146, 35);
+            this.BTNHuy.TabIndex = 7;
+            this.BTNHuy.Text = "Hủy";
+            this.BTNHuy.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNHuy.UseVisualStyleBackColor = true;
+            // 
+            // BTNInHD
+            // 
+            this.BTNInHD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNInHD.FlatAppearance.BorderSize = 0;
+            this.BTNInHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNInHD.ForeColor = System.Drawing.Color.White;
+            this.BTNInHD.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.BTNInHD.IconColor = System.Drawing.Color.White;
+            this.BTNInHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNInHD.IconSize = 40;
+            this.BTNInHD.Location = new System.Drawing.Point(639, 0);
+            this.BTNInHD.Name = "BTNInHD";
+            this.BTNInHD.Size = new System.Drawing.Size(146, 35);
+            this.BTNInHD.TabIndex = 9;
+            this.BTNInHD.Text = "In Hóa Đơn";
+            this.BTNInHD.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNInHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNInHD.UseVisualStyleBackColor = true;
+            // 
+            // BTNLuu
+            // 
+            this.BTNLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNLuu.FlatAppearance.BorderSize = 0;
+            this.BTNLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNLuu.ForeColor = System.Drawing.Color.White;
+            this.BTNLuu.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.BTNLuu.IconColor = System.Drawing.Color.White;
+            this.BTNLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNLuu.IconSize = 40;
+            this.BTNLuu.Location = new System.Drawing.Point(457, 3);
+            this.BTNLuu.Name = "BTNLuu";
+            this.BTNLuu.Size = new System.Drawing.Size(146, 32);
+            this.BTNLuu.TabIndex = 8;
+            this.BTNLuu.Text = "Lưu";
+            this.BTNLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNLuu.UseVisualStyleBackColor = true;
+            // 
+            // BTNThemThuoc
+            // 
+            this.BTNThemThuoc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNThemThuoc.FlatAppearance.BorderSize = 0;
+            this.BTNThemThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNThemThuoc.ForeColor = System.Drawing.Color.White;
+            this.BTNThemThuoc.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.BTNThemThuoc.IconColor = System.Drawing.Color.White;
+            this.BTNThemThuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNThemThuoc.IconSize = 40;
+            this.BTNThemThuoc.Location = new System.Drawing.Point(18, 0);
+            this.BTNThemThuoc.Name = "BTNThemThuoc";
+            this.BTNThemThuoc.Size = new System.Drawing.Size(146, 35);
+            this.BTNThemThuoc.TabIndex = 6;
+            this.BTNThemThuoc.Text = "Thêm";
+            this.BTNThemThuoc.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNThemThuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNThemThuoc.UseVisualStyleBackColor = true;
             // 
             // LapHoaDon
             // 

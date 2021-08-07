@@ -68,7 +68,7 @@ namespace QLTT.Controls.User
             this.panel_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Menu.Location = new System.Drawing.Point(0, 0);
             this.panel_Menu.Name = "panel_Menu";
-            this.panel_Menu.Size = new System.Drawing.Size(222, 518);
+            this.panel_Menu.Size = new System.Drawing.Size(222, 671);
             this.panel_Menu.TabIndex = 2;
             // 
             // BTNHoSo
@@ -91,6 +91,7 @@ namespace QLTT.Controls.User
             this.BTNHoSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNHoSo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNHoSo.UseVisualStyleBackColor = false;
+            this.BTNHoSo.Click += new System.EventHandler(this.BTNHoSo_Click);
             // 
             // BTNDangXuat
             // 
@@ -105,7 +106,7 @@ namespace QLTT.Controls.User
             this.BTNDangXuat.IconColor = System.Drawing.Color.Gainsboro;
             this.BTNDangXuat.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BTNDangXuat.IconSize = 45;
-            this.BTNDangXuat.Location = new System.Drawing.Point(0, 446);
+            this.BTNDangXuat.Location = new System.Drawing.Point(0, 599);
             this.BTNDangXuat.Name = "BTNDangXuat";
             this.BTNDangXuat.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BTNDangXuat.Size = new System.Drawing.Size(222, 72);
@@ -135,6 +136,7 @@ namespace QLTT.Controls.User
             this.BTNSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNSanPham.UseVisualStyleBackColor = false;
+            this.BTNSanPham.Click += new System.EventHandler(this.BTNSanPham_Click);
             // 
             // BTNLapHoaDon
             // 
@@ -156,6 +158,7 @@ namespace QLTT.Controls.User
             this.BTNLapHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNLapHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNLapHoaDon.UseVisualStyleBackColor = false;
+            this.BTNLapHoaDon.Click += new System.EventHandler(this.BTNLapHoaDon_Click);
             // 
             // panel1
             // 
@@ -171,7 +174,7 @@ namespace QLTT.Controls.User
             this.Logo.Image = global::QLTT.Properties.Resources.LogoFinal2;
             this.Logo.Location = new System.Drawing.Point(33, 8);
             this.Logo.Name = "Logo";
-            this.Logo.Padding = new System.Windows.Forms.Padding(10);
+            this.Logo.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.Logo.Size = new System.Drawing.Size(169, 92);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Logo.TabIndex = 0;
@@ -197,6 +200,7 @@ namespace QLTT.Controls.User
             this.BTNTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNTrangChu.UseVisualStyleBackColor = false;
+            this.BTNTrangChu.Click += new System.EventHandler(this.BTNTrangChu_Click);
             // 
             // paneContent
             // 
@@ -205,7 +209,8 @@ namespace QLTT.Controls.User
             this.paneContent.Location = new System.Drawing.Point(222, 0);
             this.paneContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.paneContent.Name = "paneContent";
-            this.paneContent.Size = new System.Drawing.Size(794, 518);
+            this.paneContent.Padding = new System.Windows.Forms.Padding(10);
+            this.paneContent.Size = new System.Drawing.Size(962, 671);
             this.paneContent.TabIndex = 5;
             // 
             // panel2
@@ -213,9 +218,9 @@ namespace QLTT.Controls.User
             this.panel2.Controls.Add(this.panelTime);
             this.panel2.Controls.Add(this.panelTitle);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(10, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 100);
+            this.panel2.Size = new System.Drawing.Size(942, 100);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -227,7 +232,7 @@ namespace QLTT.Controls.User
             this.panelTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTime.Location = new System.Drawing.Point(276, 0);
             this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(518, 100);
+            this.panelTime.Size = new System.Drawing.Size(666, 100);
             this.panelTime.TabIndex = 4;
             // 
             // Titel
@@ -236,7 +241,7 @@ namespace QLTT.Controls.User
             this.Titel.AutoSize = true;
             this.Titel.Font = new System.Drawing.Font("Mongolian Baiti", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Titel.Location = new System.Drawing.Point(98, -103);
+            this.Titel.Location = new System.Drawing.Point(224, -103);
             this.Titel.Name = "Titel";
             this.Titel.Size = new System.Drawing.Size(295, 24);
             this.Titel.TabIndex = 13;
@@ -248,7 +253,7 @@ namespace QLTT.Controls.User
             this.Date.AutoSize = true;
             this.Date.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Date.Location = new System.Drawing.Point(117, 60);
+            this.Date.Location = new System.Drawing.Point(243, 60);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(159, 30);
             this.Date.TabIndex = 12;
@@ -261,7 +266,7 @@ namespace QLTT.Controls.User
             this.Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Time.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Time.Location = new System.Drawing.Point(150, 12);
+            this.Time.Location = new System.Drawing.Point(276, 12);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(82, 31);
             this.Time.TabIndex = 10;
@@ -307,11 +312,14 @@ namespace QLTT.Controls.User
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1016, 518);
+            this.ClientSize = new System.Drawing.Size(1184, 671);
             this.Controls.Add(this.paneContent);
             this.Controls.Add(this.panel_Menu);
+            this.MinimumSize = new System.Drawing.Size(1200, 710);
             this.Name = "UserForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.UserForm_Load);
             this.panel_Menu.ResumeLayout(false);
             this.panel_Menu.PerformLayout();
             this.panel1.ResumeLayout(false);
