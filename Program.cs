@@ -1,4 +1,5 @@
-﻿using QLTT.Controls;
+﻿using QLTT.Common;
+using QLTT.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace QLTT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserForm());
+            Application.Run(new DangNhap());
         }
     }
 }

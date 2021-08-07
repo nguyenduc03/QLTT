@@ -16,5 +16,14 @@ namespace QLTT.Common
         {
             InitializeComponent();
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

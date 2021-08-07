@@ -30,25 +30,29 @@ namespace QLTT
         private void InitializeComponent()
         {
             this.panel_Menu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.paneContent = new System.Windows.Forms.Panel();
-            this.BTNHoSo = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.BTNHoSo = new FontAwesome.Sharp.IconButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.paneContent = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.FormlTiTel = new System.Windows.Forms.Label();
             this.panel_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Menu
@@ -65,99 +69,6 @@ namespace QLTT
             this.panel_Menu.Size = new System.Drawing.Size(222, 490);
             this.panel_Menu.TabIndex = 1;
             this.panel_Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Menu_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 100);
-            this.panel1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(222, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 70);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(165, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(553, 70);
-            this.panel4.TabIndex = 3;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.BTNHoSo);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(287, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(266, 70);
-            this.panel5.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(13, 23);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(260, 24);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "THỜI GIAN NHA ";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(165, 70);
-            this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // paneContent
-            // 
-            this.paneContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneContent.Location = new System.Drawing.Point(222, 70);
-            this.paneContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.paneContent.Name = "paneContent";
-            this.paneContent.Size = new System.Drawing.Size(718, 420);
-            this.paneContent.TabIndex = 4;
-            // 
-            // BTNHoSo
-            // 
-            this.BTNHoSo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.BTNHoSo.FlatAppearance.BorderSize = 0;
-            this.BTNHoSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNHoSo.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNHoSo.ForeColor = System.Drawing.Color.White;
-            this.BTNHoSo.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.BTNHoSo.IconColor = System.Drawing.Color.White;
-            this.BTNHoSo.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.BTNHoSo.IconSize = 45;
-            this.BTNHoSo.Location = new System.Drawing.Point(49, 12);
-            this.BTNHoSo.Name = "BTNHoSo";
-            this.BTNHoSo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BTNHoSo.Size = new System.Drawing.Size(217, 60);
-            this.BTNHoSo.TabIndex = 8;
-            this.BTNHoSo.Text = "Hồ Sơ Cá Nhân";
-            this.BTNHoSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNHoSo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNHoSo.UseVisualStyleBackColor = false;
             // 
             // iconButton6
             // 
@@ -224,6 +135,15 @@ namespace QLTT
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(222, 100);
+            this.panel1.TabIndex = 5;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLTT.Properties.Resources.logo1;
@@ -257,6 +177,116 @@ namespace QLTT
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(222, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(718, 70);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(183, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(535, 70);
+            this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.BTNHoSo);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(295, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(240, 70);
+            this.panel5.TabIndex = 9;
+            // 
+            // BTNHoSo
+            // 
+            this.BTNHoSo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.BTNHoSo.FlatAppearance.BorderSize = 0;
+            this.BTNHoSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNHoSo.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNHoSo.ForeColor = System.Drawing.Color.White;
+            this.BTNHoSo.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.BTNHoSo.IconColor = System.Drawing.Color.White;
+            this.BTNHoSo.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.BTNHoSo.IconSize = 45;
+            this.BTNHoSo.Location = new System.Drawing.Point(49, 12);
+            this.BTNHoSo.Name = "BTNHoSo";
+            this.BTNHoSo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BTNHoSo.Size = new System.Drawing.Size(217, 60);
+            this.BTNHoSo.TabIndex = 8;
+            this.BTNHoSo.Text = "Hồ Sơ Cá Nhân";
+            this.BTNHoSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNHoSo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNHoSo.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox2.Location = new System.Drawing.Point(13, 23);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox2.Size = new System.Drawing.Size(260, 24);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "THỜI GIAN NHA ";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.FormlTiTel);
+            this.panel3.Controls.Add(this.iconPictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(183, 70);
+            this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // paneContent
+            // 
+            this.paneContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneContent.Location = new System.Drawing.Point(222, 70);
+            this.paneContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.paneContent.Name = "paneContent";
+            this.paneContent.Size = new System.Drawing.Size(718, 420);
+            this.paneContent.TabIndex = 4;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(6, 12);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(50, 44);
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // FormlTiTel
+            // 
+            this.FormlTiTel.AutoSize = true;
+            this.FormlTiTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormlTiTel.ForeColor = System.Drawing.Color.White;
+            this.FormlTiTel.Location = new System.Drawing.Point(68, 20);
+            this.FormlTiTel.Name = "FormlTiTel";
+            this.FormlTiTel.Size = new System.Drawing.Size(92, 20);
+            this.FormlTiTel.TabIndex = 1;
+            this.FormlTiTel.Text = "Trang Chủ";
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,11 +303,14 @@ namespace QLTT
             this.panel_Menu.ResumeLayout(false);
             this.panel_Menu.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +330,8 @@ namespace QLTT
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel paneContent;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label FormlTiTel;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
 
