@@ -1,7 +1,7 @@
 ﻿
 namespace QLTT
 {
-    partial class Form1
+    partial class UserForm
     {
         /// <summary>
         /// Required designer variable.

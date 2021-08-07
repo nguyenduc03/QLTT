@@ -31,15 +31,11 @@ namespace QLTT.Controls
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelChucNang = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.BTNLuu = new FontAwesome.Sharp.IconButton();
-            this.BTNHuy = new FontAwesome.Sharp.IconButton();
-            this.BTNReset = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.DateNV = new System.Windows.Forms.DateTimePicker();
@@ -55,11 +51,15 @@ namespace QLTT.Controls
             this.label2 = new System.Windows.Forms.Label();
             this.TBTenNV = new System.Windows.Forms.TextBox();
             this.labelTênNV = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.BTNLuu = new FontAwesome.Sharp.IconButton();
+            this.BTNHuy = new FontAwesome.Sharp.IconButton();
+            this.BTNReset = new FontAwesome.Sharp.IconButton();
             this.panel2.SuspendLayout();
-            this.panelChucNang.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelChucNang.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,34 @@ namespace QLTT.Controls
             this.panel2.Size = new System.Drawing.Size(800, 150);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.BackColor = System.Drawing.Color.Silver;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.textBox2.Location = new System.Drawing.Point(521, 84);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(158, 27);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "MÃ NV";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::QLTT.Properties.Resources._1111;
+            this.pictureBox1.Location = new System.Drawing.Point(95, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBox1
             // 
@@ -122,21 +150,187 @@ namespace QLTT.Controls
             this.panelChucNang.Size = new System.Drawing.Size(800, 300);
             this.panelChucNang.TabIndex = 4;
             // 
-            // textBox2
+            // panel4
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.Color.Silver;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.textBox2.Location = new System.Drawing.Point(521, 84);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 27);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "MÃ NV";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.DateNV);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.TBEmailNV);
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.TBSDTNV);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.TBTenNV);
+            this.panel4.Controls.Add(this.labelTênNV);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(20, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(760, 223);
+            this.panel4.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(32, 180);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(94, 18);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Mật Khẩu : ";
+            // 
+            // DateNV
+            // 
+            this.DateNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DateNV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateNV.Location = new System.Drawing.Point(558, 22);
+            this.DateNV.Name = "DateNV";
+            this.DateNV.Size = new System.Drawing.Size(146, 20);
+            this.DateNV.TabIndex = 2;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(58, 202);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 2);
+            this.panel9.TabIndex = 34;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(481, 128);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 2);
+            this.panel5.TabIndex = 31;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.White;
+            this.textBox4.Location = new System.Drawing.Point(128, 184);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(109, 17);
+            this.textBox4.TabIndex = 5;
+            this.textBox4.Text = "0835866056";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(455, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 18);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Ngày Sinh : ";
+            // 
+            // TBEmailNV
+            // 
+            this.TBEmailNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TBEmailNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.TBEmailNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBEmailNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBEmailNV.ForeColor = System.Drawing.Color.White;
+            this.TBEmailNV.Location = new System.Drawing.Point(526, 106);
+            this.TBEmailNV.Multiline = true;
+            this.TBEmailNV.Name = "TBEmailNV";
+            this.TBEmailNV.Size = new System.Drawing.Size(231, 20);
+            this.TBEmailNV.TabIndex = 4;
+            this.TBEmailNV.Text = "nguyenductri030702@gmail.com";
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(58, 127);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 2);
+            this.panel6.TabIndex = 32;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(455, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 18);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Email : ";
+            // 
+            // TBSDTNV
+            // 
+            this.TBSDTNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TBSDTNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.TBSDTNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBSDTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBSDTNV.ForeColor = System.Drawing.Color.White;
+            this.TBSDTNV.Location = new System.Drawing.Point(158, 106);
+            this.TBSDTNV.Name = "TBSDTNV";
+            this.TBSDTNV.Size = new System.Drawing.Size(109, 17);
+            this.TBSDTNV.TabIndex = 3;
+            this.TBSDTNV.Text = "0835866056";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(58, 43);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(200, 2);
+            this.panel8.TabIndex = 33;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(32, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 18);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Số Điện Thoại : ";
+            // 
+            // TBTenNV
+            // 
+            this.TBTenNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TBTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.TBTenNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TBTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBTenNV.ForeColor = System.Drawing.Color.White;
+            this.TBTenNV.Location = new System.Drawing.Point(158, 20);
+            this.TBTenNV.Multiline = true;
+            this.TBTenNV.Name = "TBTenNV";
+            this.TBTenNV.Size = new System.Drawing.Size(200, 20);
+            this.TBTenNV.TabIndex = 1;
+            this.TBTenNV.Text = "Nguyễn đức trí";
+            // 
+            // labelTênNV
+            // 
+            this.labelTênNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTênNV.AutoSize = true;
+            this.labelTênNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTênNV.ForeColor = System.Drawing.Color.White;
+            this.labelTênNV.Location = new System.Drawing.Point(28, 22);
+            this.labelTênNV.Name = "labelTênNV";
+            this.labelTênNV.Size = new System.Drawing.Size(132, 18);
+            this.labelTênNV.TabIndex = 30;
+            this.labelTênNV.Text = "Tên Nhân Viên : ";
             // 
             // panel7
             // 
@@ -206,200 +400,6 @@ namespace QLTT.Controls
             this.BTNReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNReset.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::QLTT.Properties.Resources._1111;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.DateNV);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.TBEmailNV);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.TBSDTNV);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.TBTenNV);
-            this.panel4.Controls.Add(this.labelTênNV);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(20, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(760, 223);
-            this.panel4.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 18);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Mật Khẩu : ";
-            // 
-            // DateNV
-            // 
-            this.DateNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DateNV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateNV.Location = new System.Drawing.Point(558, 22);
-            this.DateNV.Name = "DateNV";
-            this.DateNV.Size = new System.Drawing.Size(146, 20);
-            this.DateNV.TabIndex = 23;
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(58, 202);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 2);
-            this.panel9.TabIndex = 34;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(481, 128);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 2);
-            this.panel5.TabIndex = 31;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(128, 184);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(109, 17);
-            this.textBox4.TabIndex = 26;
-            this.textBox4.Text = "0835866056";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(455, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 18);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Ngày Sinh : ";
-            // 
-            // TBEmailNV
-            // 
-            this.TBEmailNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TBEmailNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.TBEmailNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TBEmailNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBEmailNV.ForeColor = System.Drawing.Color.White;
-            this.TBEmailNV.Location = new System.Drawing.Point(526, 106);
-            this.TBEmailNV.Multiline = true;
-            this.TBEmailNV.Name = "TBEmailNV";
-            this.TBEmailNV.Size = new System.Drawing.Size(231, 20);
-            this.TBEmailNV.TabIndex = 25;
-            this.TBEmailNV.Text = "nguyenductri030702@gmail.com";
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(58, 127);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 2);
-            this.panel6.TabIndex = 32;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(455, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Email : ";
-            // 
-            // TBSDTNV
-            // 
-            this.TBSDTNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TBSDTNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.TBSDTNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TBSDTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBSDTNV.ForeColor = System.Drawing.Color.White;
-            this.TBSDTNV.Location = new System.Drawing.Point(158, 106);
-            this.TBSDTNV.Name = "TBSDTNV";
-            this.TBSDTNV.Size = new System.Drawing.Size(109, 17);
-            this.TBSDTNV.TabIndex = 24;
-            this.TBSDTNV.Text = "0835866056";
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(58, 43);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 2);
-            this.panel8.TabIndex = 33;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(32, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 18);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Số Điện Thoại : ";
-            // 
-            // TBTenNV
-            // 
-            this.TBTenNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TBTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.TBTenNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TBTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBTenNV.ForeColor = System.Drawing.Color.White;
-            this.TBTenNV.Location = new System.Drawing.Point(158, 20);
-            this.TBTenNV.Multiline = true;
-            this.TBTenNV.Name = "TBTenNV";
-            this.TBTenNV.Size = new System.Drawing.Size(200, 20);
-            this.TBTenNV.TabIndex = 22;
-            this.TBTenNV.Text = "Nguyễn đức trí";
-            // 
-            // labelTênNV
-            // 
-            this.labelTênNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTênNV.AutoSize = true;
-            this.labelTênNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTênNV.ForeColor = System.Drawing.Color.White;
-            this.labelTênNV.Location = new System.Drawing.Point(28, 22);
-            this.labelTênNV.Name = "labelTênNV";
-            this.labelTênNV.Size = new System.Drawing.Size(132, 18);
-            this.labelTênNV.TabIndex = 30;
-            this.labelTênNV.Text = "Tên Nhân Viên : ";
-            // 
             // HoSoCaNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,11 +413,11 @@ namespace QLTT.Controls
             this.ShowIcon = false;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelChucNang.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelChucNang.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

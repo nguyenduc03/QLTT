@@ -49,61 +49,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\HoSoCaNhan.cs">
+    <Compile Include="Controls\User\HoSoCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\HoSoCaNhan.Designer.cs">
+    <Compile Include="Controls\User\HoSoCaNhan.Designer.cs">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\QuanLyNhanVien.cs">
+    <Compile Include="Controls\Admin\QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\QuanLyNhanVien.Designer.cs">
+    <Compile Include="Controls\Admin\QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SanPham.cs">
+    <Compile Include="Controls\User\SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\SanPham.Designer.cs">
+    <Compile Include="Controls\User\SanPham.Designer.cs">
       <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Temp.cs">
+    <Compile Include="Controls\User\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\Temp.Designer.cs">
-      <DependentUpon>Temp.cs</DependentUpon>
+    <Compile Include="Controls\User\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controls\User\LapHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\LapHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\LapHoaDon.Designer.cs">
+    <Compile Include="Controls\User\LapHoaDon.Designer.cs">
       <DependentUpon>LapHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\HoSoCaNhan.resx">
+    <EmbeddedResource Include="Controls\User\HoSoCaNhan.resx">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\LapHoaDon.resx">
+    <EmbeddedResource Include="Controls\User\LapHoaDon.resx">
       <DependentUpon>LapHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\QuanLyNhanVien.resx">
+    <EmbeddedResource Include="Controls\Admin\QuanLyNhanVien.resx">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\SanPham.resx">
+    <EmbeddedResource Include="Controls\User\SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Temp.resx">
-      <DependentUpon>Temp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\User\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
