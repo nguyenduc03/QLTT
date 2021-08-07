@@ -30,7 +30,7 @@ namespace QLTT.Controls
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelTitle = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -55,7 +55,7 @@ namespace QLTT.Controls
             this.BTNLuu = new FontAwesome.Sharp.IconButton();
             this.BTNHuy = new FontAwesome.Sharp.IconButton();
             this.BTNReset = new FontAwesome.Sharp.IconButton();
-            this.panel2.SuspendLayout();
+            this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChucNang.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,19 +71,19 @@ namespace QLTT.Controls
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // panelTitle
             // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 150);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panelTitle.BackColor = System.Drawing.Color.Silver;
+            this.panelTitle.Controls.Add(this.textBox2);
+            this.panelTitle.Controls.Add(this.pictureBox1);
+            this.panelTitle.Controls.Add(this.textBox1);
+            this.panelTitle.Controls.Add(this.panel3);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(800, 150);
+            this.panelTitle.TabIndex = 1;
+            this.panelTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textBox2
             // 
@@ -407,12 +407,12 @@ namespace QLTT.Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelChucNang);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
             this.Name = "HoSoCaNhan";
             this.ShowIcon = false;
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChucNang.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -427,7 +427,7 @@ namespace QLTT.Controls
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panelChucNang;

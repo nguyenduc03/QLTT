@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLTT.Controls.User
+namespace QLTT.Controls.Admin
 {
-    public partial class UserForm : Form
+    public partial class AdminForm : Form
     {
-        public UserForm()
+        public AdminForm()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

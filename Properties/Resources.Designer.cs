@@ -133,6 +133,36 @@ namespace QLTT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoFinal {
+            get {
+                object obj = ResourceManager.GetObject("LogoFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoFinal1 {
+            get {
+                object obj = ResourceManager.GetObject("LogoFinal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoFinal2 {
+            get {
+                object obj = ResourceManager.GetObject("LogoFinal2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tesst_removebg_preview1 {
             get {
                 object obj = ResourceManager.GetObject("tesst-removebg-preview1", resourceCulture);
@@ -156,6 +186,16 @@ namespace QLTT.Properties {
         internal static System.Drawing.Bitmap test1 {
             get {
                 object obj = ResourceManager.GetObject("test1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ttt {
+            get {
+                object obj = ResourceManager.GetObject("ttt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

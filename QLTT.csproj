@@ -67,6 +67,12 @@
     <Compile Include="Common\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Admin\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Admin\QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,17 +85,17 @@
     <Compile Include="Controls\Admin\ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\User\SanPham.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls\User\SanPham.Designer.cs">
-      <DependentUpon>SanPham.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\User\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\User\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\User\SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\User\SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\User\LapHoaDon.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,12 @@
     <EmbeddedResource Include="Common\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\User\LapHoaDon.resx">
       <DependentUpon>LapHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\User\SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\User\UserForm.resx">
-      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +182,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\banner1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFinal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoFinal2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

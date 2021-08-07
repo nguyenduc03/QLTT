@@ -59,7 +59,7 @@ namespace QLTT.Common
             this.Titel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Titel.AutoSize = true;
             this.Titel.Font = new System.Drawing.Font("Mongolian Baiti", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Titel.ForeColor = System.Drawing.Color.Gainsboro;
             this.Titel.Location = new System.Drawing.Point(506, 242);
             this.Titel.Name = "Titel";
             this.Titel.Size = new System.Drawing.Size(295, 24);
@@ -84,7 +84,7 @@ namespace QLTT.Common
             this.Date.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Date.AutoSize = true;
             this.Date.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Date.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Date.ForeColor = System.Drawing.Color.Gainsboro;
             this.Date.Location = new System.Drawing.Point(570, 407);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(159, 30);
@@ -96,7 +96,7 @@ namespace QLTT.Common
             this.Time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.Time.AutoSize = true;
             this.Time.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Time.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Time.ForeColor = System.Drawing.Color.Gainsboro;
             this.Time.Location = new System.Drawing.Point(617, 355);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(86, 30);
@@ -106,7 +106,7 @@ namespace QLTT.Common
             // Logo
             // 
             this.Logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.Logo.Image = global::QLTT.Properties.Resources.logo1;
+            this.Logo.Image = global::QLTT.Properties.Resources.LogoFinal2;
             this.Logo.Location = new System.Drawing.Point(500, 65);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(290, 174);
@@ -122,6 +122,7 @@ namespace QLTT.Common
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(836, 528);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "TrangChu";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.TrangChu_Load_1);

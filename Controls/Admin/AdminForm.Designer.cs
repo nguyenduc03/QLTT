@@ -1,7 +1,7 @@
 ﻿
-namespace QLTT.Controls.User
+namespace QLTT.Controls.Admin
 {
-    partial class UserForm
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,30 +30,29 @@ namespace QLTT.Controls.User
         private void InitializeComponent()
         {
             this.panel_Menu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.BTNHoSo = new FontAwesome.Sharp.IconButton();
             this.BTNDangXuat = new FontAwesome.Sharp.IconButton();
-            this.BTNSanPham = new FontAwesome.Sharp.IconButton();
-            this.BTNLapHoaDon = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.BTNQuanLyNV = new FontAwesome.Sharp.IconButton();
+            this.BTNThongKe = new FontAwesome.Sharp.IconButton();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.BTNTrangChu = new FontAwesome.Sharp.IconButton();
-            this.paneContent = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelTime = new System.Windows.Forms.Panel();
             this.Titel = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.Label();
             this.Time = new System.Windows.Forms.Label();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.LabellTiTle = new System.Windows.Forms.Label();
-            this.IconTitle = new FontAwesome.Sharp.IconPictureBox();
+            this.panelTiTle = new System.Windows.Forms.Panel();
+            this.FormlTiTle = new System.Windows.Forms.Label();
+            this.IconTitel = new FontAwesome.Sharp.IconPictureBox();
+            this.panelContent = new System.Windows.Forms.Panel();
             this.panel_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            this.paneContent.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelTime.SuspendLayout();
-            this.panelTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconTitle)).BeginInit();
+            this.panelTiTle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconTitel)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Menu
@@ -61,15 +60,24 @@ namespace QLTT.Controls.User
             this.panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.panel_Menu.Controls.Add(this.BTNHoSo);
             this.panel_Menu.Controls.Add(this.BTNDangXuat);
-            this.panel_Menu.Controls.Add(this.BTNSanPham);
-            this.panel_Menu.Controls.Add(this.BTNLapHoaDon);
+            this.panel_Menu.Controls.Add(this.BTNQuanLyNV);
+            this.panel_Menu.Controls.Add(this.BTNThongKe);
             this.panel_Menu.Controls.Add(this.panel1);
             this.panel_Menu.Controls.Add(this.BTNTrangChu);
             this.panel_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Menu.Location = new System.Drawing.Point(0, 0);
             this.panel_Menu.Name = "panel_Menu";
-            this.panel_Menu.Size = new System.Drawing.Size(222, 518);
-            this.panel_Menu.TabIndex = 2;
+            this.panel_Menu.Size = new System.Drawing.Size(222, 532);
+            this.panel_Menu.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.Logo);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(222, 100);
+            this.panel1.TabIndex = 5;
             // 
             // BTNHoSo
             // 
@@ -87,7 +95,7 @@ namespace QLTT.Controls.User
             this.BTNHoSo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BTNHoSo.Size = new System.Drawing.Size(222, 60);
             this.BTNHoSo.TabIndex = 8;
-            this.BTNHoSo.Text = "Hồ Sơ Cá Nhân";
+            this.BTNHoSo.Text = "        Hồ Sơ              Cá Nhân";
             this.BTNHoSo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNHoSo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNHoSo.UseVisualStyleBackColor = false;
@@ -105,66 +113,57 @@ namespace QLTT.Controls.User
             this.BTNDangXuat.IconColor = System.Drawing.Color.Gainsboro;
             this.BTNDangXuat.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.BTNDangXuat.IconSize = 45;
-            this.BTNDangXuat.Location = new System.Drawing.Point(0, 446);
+            this.BTNDangXuat.Location = new System.Drawing.Point(0, 460);
             this.BTNDangXuat.Name = "BTNDangXuat";
             this.BTNDangXuat.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BTNDangXuat.Size = new System.Drawing.Size(222, 72);
             this.BTNDangXuat.TabIndex = 9;
-            this.BTNDangXuat.Text = "Đăng Xuất    ";
+            this.BTNDangXuat.Text = "    Đăng Xuất    ";
             this.BTNDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNDangXuat.UseVisualStyleBackColor = false;
             // 
-            // BTNSanPham
+            // BTNQuanLyNV
             // 
-            this.BTNSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.BTNSanPham.FlatAppearance.BorderSize = 0;
-            this.BTNSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNSanPham.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSanPham.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BTNSanPham.IconChar = FontAwesome.Sharp.IconChar.Capsules;
-            this.BTNSanPham.IconColor = System.Drawing.Color.Gainsboro;
-            this.BTNSanPham.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.BTNSanPham.IconSize = 45;
-            this.BTNSanPham.Location = new System.Drawing.Point(0, 284);
-            this.BTNSanPham.Name = "BTNSanPham";
-            this.BTNSanPham.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BTNSanPham.Size = new System.Drawing.Size(220, 60);
-            this.BTNSanPham.TabIndex = 7;
-            this.BTNSanPham.Text = "Sản Phẩm     ";
-            this.BTNSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNSanPham.UseVisualStyleBackColor = false;
+            this.BTNQuanLyNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.BTNQuanLyNV.FlatAppearance.BorderSize = 0;
+            this.BTNQuanLyNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNQuanLyNV.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNQuanLyNV.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BTNQuanLyNV.IconChar = FontAwesome.Sharp.IconChar.Capsules;
+            this.BTNQuanLyNV.IconColor = System.Drawing.Color.Gainsboro;
+            this.BTNQuanLyNV.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.BTNQuanLyNV.IconSize = 45;
+            this.BTNQuanLyNV.Location = new System.Drawing.Point(6, 280);
+            this.BTNQuanLyNV.Name = "BTNQuanLyNV";
+            this.BTNQuanLyNV.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BTNQuanLyNV.Size = new System.Drawing.Size(216, 60);
+            this.BTNQuanLyNV.TabIndex = 7;
+            this.BTNQuanLyNV.Text = "     Quản Lý          Nhân Viên";
+            this.BTNQuanLyNV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNQuanLyNV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNQuanLyNV.UseVisualStyleBackColor = false;
             // 
-            // BTNLapHoaDon
+            // BTNThongKe
             // 
-            this.BTNLapHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.BTNLapHoaDon.FlatAppearance.BorderSize = 0;
-            this.BTNLapHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNLapHoaDon.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNLapHoaDon.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BTNLapHoaDon.IconChar = FontAwesome.Sharp.IconChar.IdBadge;
-            this.BTNLapHoaDon.IconColor = System.Drawing.Color.Gainsboro;
-            this.BTNLapHoaDon.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.BTNLapHoaDon.IconSize = 45;
-            this.BTNLapHoaDon.Location = new System.Drawing.Point(0, 202);
-            this.BTNLapHoaDon.Name = "BTNLapHoaDon";
-            this.BTNLapHoaDon.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BTNLapHoaDon.Size = new System.Drawing.Size(220, 60);
-            this.BTNLapHoaDon.TabIndex = 6;
-            this.BTNLapHoaDon.Text = "Lập Hóa Đơn";
-            this.BTNLapHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNLapHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNLapHoaDon.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.panel1.Controls.Add(this.Logo);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 100);
-            this.panel1.TabIndex = 5;
+            this.BTNThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.BTNThongKe.FlatAppearance.BorderSize = 0;
+            this.BTNThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNThongKe.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNThongKe.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BTNThongKe.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.BTNThongKe.IconColor = System.Drawing.Color.Gainsboro;
+            this.BTNThongKe.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.BTNThongKe.IconSize = 45;
+            this.BTNThongKe.Location = new System.Drawing.Point(0, 202);
+            this.BTNThongKe.Name = "BTNThongKe";
+            this.BTNThongKe.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BTNThongKe.Size = new System.Drawing.Size(220, 60);
+            this.BTNThongKe.TabIndex = 6;
+            this.BTNThongKe.Text = "     Thống Kê";
+            this.BTNThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNThongKe.UseVisualStyleBackColor = false;
             // 
             // Logo
             // 
@@ -193,31 +192,20 @@ namespace QLTT.Controls.User
             this.BTNTrangChu.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BTNTrangChu.Size = new System.Drawing.Size(220, 60);
             this.BTNTrangChu.TabIndex = 0;
-            this.BTNTrangChu.Text = "Trang Chủ    ";
+            this.BTNTrangChu.Text = "     Trang Chủ    ";
             this.BTNTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BTNTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTNTrangChu.UseVisualStyleBackColor = false;
             // 
-            // paneContent
-            // 
-            this.paneContent.Controls.Add(this.panel2);
-            this.paneContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneContent.Location = new System.Drawing.Point(222, 0);
-            this.paneContent.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.paneContent.Name = "paneContent";
-            this.paneContent.Size = new System.Drawing.Size(794, 518);
-            this.paneContent.TabIndex = 5;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panelTime);
-            this.panel2.Controls.Add(this.panelTitle);
+            this.panel2.Controls.Add(this.panelTiTle);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(222, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 100);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.Size = new System.Drawing.Size(806, 100);
+            this.panel2.TabIndex = 4;
             // 
             // panelTime
             // 
@@ -227,7 +215,7 @@ namespace QLTT.Controls.User
             this.panelTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTime.Location = new System.Drawing.Point(276, 0);
             this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(518, 100);
+            this.panelTime.Size = new System.Drawing.Size(530, 100);
             this.panelTime.TabIndex = 4;
             // 
             // Titel
@@ -236,7 +224,7 @@ namespace QLTT.Controls.User
             this.Titel.AutoSize = true;
             this.Titel.Font = new System.Drawing.Font("Mongolian Baiti", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Titel.Location = new System.Drawing.Point(98, -103);
+            this.Titel.Location = new System.Drawing.Point(104, -103);
             this.Titel.Name = "Titel";
             this.Titel.Size = new System.Drawing.Size(295, 24);
             this.Titel.TabIndex = 13;
@@ -248,7 +236,7 @@ namespace QLTT.Controls.User
             this.Date.AutoSize = true;
             this.Date.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Date.Location = new System.Drawing.Point(117, 60);
+            this.Date.Location = new System.Drawing.Point(123, 60);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(159, 30);
             this.Date.TabIndex = 12;
@@ -261,68 +249,77 @@ namespace QLTT.Controls.User
             this.Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Time.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Time.Location = new System.Drawing.Point(150, 12);
+            this.Time.Location = new System.Drawing.Point(156, 12);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(82, 31);
             this.Time.TabIndex = 10;
             this.Time.Text = "20:20";
             // 
-            // panelTitle
+            // panelTiTle
             // 
-            this.panelTitle.Controls.Add(this.LabellTiTle);
-            this.panelTitle.Controls.Add(this.IconTitle);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(276, 100);
-            this.panelTitle.TabIndex = 2;
+            this.panelTiTle.Controls.Add(this.FormlTiTle);
+            this.panelTiTle.Controls.Add(this.IconTitel);
+            this.panelTiTle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelTiTle.Location = new System.Drawing.Point(0, 0);
+            this.panelTiTle.Name = "panelTiTle";
+            this.panelTiTle.Size = new System.Drawing.Size(276, 100);
+            this.panelTiTle.TabIndex = 2;
             // 
-            // LabellTiTle
+            // FormlTiTle
             // 
-            this.LabellTiTle.AutoSize = true;
-            this.LabellTiTle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabellTiTle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LabellTiTle.Location = new System.Drawing.Point(134, 48);
-            this.LabellTiTle.Name = "LabellTiTle";
-            this.LabellTiTle.Size = new System.Drawing.Size(92, 20);
-            this.LabellTiTle.TabIndex = 1;
-            this.LabellTiTle.Text = "Trang Chủ";
+            this.FormlTiTle.AutoSize = true;
+            this.FormlTiTle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormlTiTle.ForeColor = System.Drawing.Color.Gainsboro;
+            this.FormlTiTle.Location = new System.Drawing.Point(134, 48);
+            this.FormlTiTle.Name = "FormlTiTle";
+            this.FormlTiTle.Size = new System.Drawing.Size(92, 20);
+            this.FormlTiTle.TabIndex = 1;
+            this.FormlTiTle.Text = "Trang Chủ";
             // 
-            // IconTitle
+            // IconTitel
             // 
-            this.IconTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.IconTitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.IconTitle.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.IconTitle.IconColor = System.Drawing.Color.Gainsboro;
-            this.IconTitle.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconTitle.IconSize = 44;
-            this.IconTitle.Location = new System.Drawing.Point(72, 40);
-            this.IconTitle.Name = "IconTitle";
-            this.IconTitle.Size = new System.Drawing.Size(50, 44);
-            this.IconTitle.TabIndex = 0;
-            this.IconTitle.TabStop = false;
+            this.IconTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.IconTitel.ForeColor = System.Drawing.Color.Gainsboro;
+            this.IconTitel.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.IconTitel.IconColor = System.Drawing.Color.Gainsboro;
+            this.IconTitel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconTitel.IconSize = 44;
+            this.IconTitel.Location = new System.Drawing.Point(72, 40);
+            this.IconTitel.Name = "IconTitel";
+            this.IconTitel.Size = new System.Drawing.Size(50, 44);
+            this.IconTitel.TabIndex = 0;
+            this.IconTitel.TabStop = false;
             // 
-            // UserForm
+            // panelContent
+            // 
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(222, 100);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(806, 432);
+            this.panelContent.TabIndex = 5;
+            // 
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1016, 518);
-            this.Controls.Add(this.paneContent);
+            this.ClientSize = new System.Drawing.Size(1028, 532);
+            this.Controls.Add(this.panelContent);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel_Menu);
-            this.Name = "UserForm";
-            this.Text = "Form1";
+            this.ForeColor = System.Drawing.Color.White;
+            this.Name = "AdminForm";
+            this.Text = "AdminForm";
             this.panel_Menu.ResumeLayout(false);
             this.panel_Menu.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            this.paneContent.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panelTime.ResumeLayout(false);
             this.panelTime.PerformLayout();
-            this.panelTitle.ResumeLayout(false);
-            this.panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconTitle)).EndInit();
+            this.panelTiTle.ResumeLayout(false);
+            this.panelTiTle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconTitel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,21 +327,21 @@ namespace QLTT.Controls.User
         #endregion
 
         private System.Windows.Forms.Panel panel_Menu;
+        private FontAwesome.Sharp.IconButton BTNHoSo;
         private FontAwesome.Sharp.IconButton BTNDangXuat;
-        private FontAwesome.Sharp.IconButton BTNSanPham;
-        private FontAwesome.Sharp.IconButton BTNLapHoaDon;
+        private FontAwesome.Sharp.IconButton BTNQuanLyNV;
+        private FontAwesome.Sharp.IconButton BTNThongKe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox Logo;
         private FontAwesome.Sharp.IconButton BTNTrangChu;
-        private System.Windows.Forms.Panel paneContent;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panelTitle;
-        private System.Windows.Forms.Label LabellTiTle;
-        private FontAwesome.Sharp.IconPictureBox IconTitle;
         private System.Windows.Forms.Panel panelTime;
         private System.Windows.Forms.Label Titel;
         private System.Windows.Forms.Label Date;
         private System.Windows.Forms.Label Time;
-        private FontAwesome.Sharp.IconButton BTNHoSo;
+        private System.Windows.Forms.Panel panelTiTle;
+        private System.Windows.Forms.Label FormlTiTle;
+        private FontAwesome.Sharp.IconPictureBox IconTitel;
+        private System.Windows.Forms.Panel panelContent;
     }
 }
