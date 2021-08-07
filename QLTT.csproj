@@ -49,17 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\User\HoSoCaNhan.cs">
+    <Compile Include="Common\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\User\HoSoCaNhan.Designer.cs">
+    <Compile Include="Common\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HoSoCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\HoSoCaNhan.Designer.cs">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Admin\QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controls\Admin\QuanLyNhanVien.Designer.cs">
       <DependentUpon>QuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Admin\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Admin\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\User\SanPham.cs">
       <SubType>Form</SubType>
@@ -81,7 +99,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\User\HoSoCaNhan.resx">
+    <EmbeddedResource Include="Common\HoSoCaNhan.resx">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\User\LapHoaDon.resx">
@@ -132,6 +150,11 @@
   <ItemGroup>
     <None Include="Resources\5772734360_a8a8d490-60f9-47ac-8970-402deddaa8f7.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\tesst-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

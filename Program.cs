@@ -17,7 +17,7 @@ namespace QLTT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HoSoCaNhan());
+            Application.Run(new UserForm());
         }
     }
 }
