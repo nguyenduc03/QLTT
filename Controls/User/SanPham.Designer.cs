@@ -504,6 +504,7 @@ namespace QLTT.Controls
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "SanPham";
             this.ShowIcon = false;
+            this.Text = "Quản Lý Sản Phẩm";
             this.panelTieuDe.ResumeLayout(false);
             this.panelTieuDe.PerformLayout();
             this.panelMenu.ResumeLayout(false);

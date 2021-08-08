@@ -22,8 +22,8 @@ namespace QLTT.Common
         private void TrangChu_Load_1(object sender, EventArgs e)
         {
             Logo.BackColor = Color.FromArgb(0, 0, 0, 0);
-            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
-            Date.BackColor = Color.FromArgb(0, 0, 0, 0);
+            panel1.BackColor = Color.FromArgb(150, 0, 0, 0);
+            Date.BackColor =Color.FromArgb(0, 0, 0, 0);
             Time.BackColor = Color.FromArgb(0, 0, 0, 0);
             ThongTinNSX.BackColor = Color.FromArgb(0, 0, 0, 0);
             Titel.BackColor = Color.FromArgb(0, 0, 0, 0);

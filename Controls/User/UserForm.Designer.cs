@@ -29,6 +29,7 @@ namespace QLTT.Controls.User
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.panel_Menu = new System.Windows.Forms.Panel();
             this.BTNHoSo = new FontAwesome.Sharp.IconButton();
             this.BTNDangXuat = new FontAwesome.Sharp.IconButton();
@@ -45,7 +46,7 @@ namespace QLTT.Controls.User
             this.Time = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.LabellTiTle = new System.Windows.Forms.Label();
-            this.IconTitle = new FontAwesome.Sharp.IconPictureBox();
+            this.IconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panel_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -53,7 +54,7 @@ namespace QLTT.Controls.User
             this.panel2.SuspendLayout();
             this.panelTime.SuspendLayout();
             this.panelTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconTitle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconCurrent)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Menu
@@ -174,7 +175,7 @@ namespace QLTT.Controls.User
             this.Logo.Image = global::QLTT.Properties.Resources.LogoFinal2;
             this.Logo.Location = new System.Drawing.Point(33, 8);
             this.Logo.Name = "Logo";
-            this.Logo.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.Logo.Padding = new System.Windows.Forms.Padding(10);
             this.Logo.Size = new System.Drawing.Size(169, 92);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Logo.TabIndex = 0;
@@ -230,9 +231,9 @@ namespace QLTT.Controls.User
             this.panelTime.Controls.Add(this.Date);
             this.panelTime.Controls.Add(this.Time);
             this.panelTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTime.Location = new System.Drawing.Point(276, 0);
+            this.panelTime.Location = new System.Drawing.Point(313, 0);
             this.panelTime.Name = "panelTime";
-            this.panelTime.Size = new System.Drawing.Size(666, 100);
+            this.panelTime.Size = new System.Drawing.Size(629, 100);
             this.panelTime.TabIndex = 4;
             // 
             // Titel
@@ -241,7 +242,7 @@ namespace QLTT.Controls.User
             this.Titel.AutoSize = true;
             this.Titel.Font = new System.Drawing.Font("Mongolian Baiti", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titel.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Titel.Location = new System.Drawing.Point(224, -103);
+            this.Titel.Location = new System.Drawing.Point(205, -103);
             this.Titel.Name = "Titel";
             this.Titel.Size = new System.Drawing.Size(295, 24);
             this.Titel.TabIndex = 13;
@@ -253,7 +254,7 @@ namespace QLTT.Controls.User
             this.Date.AutoSize = true;
             this.Date.Font = new System.Drawing.Font("Mongolian Baiti", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Date.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Date.Location = new System.Drawing.Point(243, 60);
+            this.Date.Location = new System.Drawing.Point(224, 60);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(159, 30);
             this.Date.TabIndex = 12;
@@ -266,7 +267,7 @@ namespace QLTT.Controls.User
             this.Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Time.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Time.Location = new System.Drawing.Point(276, 12);
+            this.Time.Location = new System.Drawing.Point(257, 12);
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(82, 31);
             this.Time.TabIndex = 10;
@@ -274,12 +275,12 @@ namespace QLTT.Controls.User
             // 
             // panelTitle
             // 
+            this.panelTitle.Controls.Add(this.IconCurrent);
             this.panelTitle.Controls.Add(this.LabellTiTle);
-            this.panelTitle.Controls.Add(this.IconTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelTitle.Location = new System.Drawing.Point(0, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(276, 100);
+            this.panelTitle.Size = new System.Drawing.Size(313, 100);
             this.panelTitle.TabIndex = 2;
             // 
             // LabellTiTle
@@ -293,19 +294,19 @@ namespace QLTT.Controls.User
             this.LabellTiTle.TabIndex = 1;
             this.LabellTiTle.Text = "Trang Chủ";
             // 
-            // IconTitle
+            // IconCurrent
             // 
-            this.IconTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
-            this.IconTitle.ForeColor = System.Drawing.Color.Gainsboro;
-            this.IconTitle.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.IconTitle.IconColor = System.Drawing.Color.Gainsboro;
-            this.IconTitle.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.IconTitle.IconSize = 44;
-            this.IconTitle.Location = new System.Drawing.Point(72, 40);
-            this.IconTitle.Name = "IconTitle";
-            this.IconTitle.Size = new System.Drawing.Size(50, 44);
-            this.IconTitle.TabIndex = 0;
-            this.IconTitle.TabStop = false;
+            this.IconCurrent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.IconCurrent.ForeColor = System.Drawing.Color.Coral;
+            this.IconCurrent.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.IconCurrent.IconColor = System.Drawing.Color.Coral;
+            this.IconCurrent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.IconCurrent.IconSize = 39;
+            this.IconCurrent.Location = new System.Drawing.Point(56, 32);
+            this.IconCurrent.Name = "IconCurrent";
+            this.IconCurrent.Size = new System.Drawing.Size(51, 39);
+            this.IconCurrent.TabIndex = 2;
+            this.IconCurrent.TabStop = false;
             // 
             // UserForm
             // 
@@ -315,10 +316,11 @@ namespace QLTT.Controls.User
             this.ClientSize = new System.Drawing.Size(1184, 671);
             this.Controls.Add(this.paneContent);
             this.Controls.Add(this.panel_Menu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1200, 710);
             this.Name = "UserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Quản Lý Tiệm Thuốc";
             this.Load += new System.EventHandler(this.UserForm_Load);
             this.panel_Menu.ResumeLayout(false);
             this.panel_Menu.PerformLayout();
@@ -330,7 +332,7 @@ namespace QLTT.Controls.User
             this.panelTime.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IconTitle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconCurrent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,11 +350,11 @@ namespace QLTT.Controls.User
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Label LabellTiTle;
-        private FontAwesome.Sharp.IconPictureBox IconTitle;
         private System.Windows.Forms.Panel panelTime;
         private System.Windows.Forms.Label Titel;
         private System.Windows.Forms.Label Date;
         private System.Windows.Forms.Label Time;
         private FontAwesome.Sharp.IconButton BTNHoSo;
+        private FontAwesome.Sharp.IconPictureBox IconCurrent;
     }
 }

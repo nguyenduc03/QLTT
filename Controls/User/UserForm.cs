@@ -1,4 +1,5 @@
-﻿using QLTT.Common;
+﻿using FontAwesome.Sharp;
+using QLTT.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,12 +14,15 @@ namespace QLTT.Controls.User
 {
     public partial class UserForm : Form
     {
+        private IconButton CurrentBTN = new IconButton();
 
         private Form CurrentChildForm;
         public UserForm()
         {
             InitializeComponent();
             OpenChildForm(new TrangChu());
+            ShowCurrentBTN(BTNTrangChu, ClassColor.color1);
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -47,26 +51,65 @@ namespace QLTT.Controls.User
             LabellTiTle.Text = ChildForm.Text;
         }
 
+        public void ShowCurrentBTN(object senderBTN, Color colorInput)
+        {
+            if (senderBTN != null)
+            {
+                ResetBTN();
+                CurrentBTN = (IconButton)senderBTN;
+                CurrentBTN.TextAlign = ContentAlignment.MiddleLeft;
+                CurrentBTN.TextImageRelation = TextImageRelation.TextBeforeImage;
+                CurrentBTN.BackColor = Color.FromArgb(70, 252, 252, 252);
+                CurrentBTN.IconColor = colorInput;
+
+
+                /// icon current 
+                IconCurrent.IconChar = CurrentBTN.IconChar;
+                IconCurrent.IconColor = CurrentBTN.IconColor;
+
+            }
+        }
+        public void ResetBTN()
+        {
+            if (CurrentBTN != null)
+            {
+                CurrentBTN.TextAlign = ContentAlignment.MiddleLeft;
+                CurrentBTN.TextImageRelation = TextImageRelation.ImageBeforeText;
+                CurrentBTN.BackColor = Color.FromArgb(47, 49, 49);
+                CurrentBTN.IconColor = Color.Gainsboro;
+            }
+        }
+
         private void BTNTrangChu_Click(object sender, EventArgs e)
         {
             OpenChildForm(new TrangChu());
+            ShowCurrentBTN(sender, ClassColor.color1);
+
+
         }
 
         private void BTNLapHoaDon_Click(object sender, EventArgs e)
         {
             OpenChildForm(new LapHoaDon());
+            ShowCurrentBTN(sender, ClassColor.color2);
+
 
         }
 
         private void BTNSanPham_Click(object sender, EventArgs e)
         {
             OpenChildForm(new SanPham());
+            ShowCurrentBTN(sender, ClassColor.color3);
+
 
         }
 
         private void BTNHoSo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new HoSoCaNhan());
+            ShowCurrentBTN(sender,ClassColor.color4);
+
+
 
         }
     }

@@ -50,22 +50,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\DangNhap.cs">
+    <Compile Include="Common\Class\ChangeBotton.cs" />
+    <Compile Include="Common\Class\ClassColor.cs" />
+    <Compile Include="Common\Form\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Common\DangNhap.Designer.cs">
+    <Compile Include="Common\Form\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Common\HoSoCaNhan.cs">
+    <Compile Include="Common\Form\HoSoCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Common\HoSoCaNhan.Designer.cs">
+    <Compile Include="Common\Form\HoSoCaNhan.Designer.cs">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Common\TrangChu.cs">
+    <Compile Include="Common\Form\TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Common\TrangChu.Designer.cs">
+    <Compile Include="Common\Form\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Admin\AdminForm.cs">
@@ -106,13 +108,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Common\DangNhap.resx">
+    <EmbeddedResource Include="Common\Form\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Common\HoSoCaNhan.resx">
+    <EmbeddedResource Include="Common\Form\HoSoCaNhan.resx">
       <DependentUpon>HoSoCaNhan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Common\TrangChu.resx">
+    <EmbeddedResource Include="Common\Form\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Admin\AdminForm.resx">

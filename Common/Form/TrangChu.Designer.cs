@@ -125,6 +125,7 @@ namespace QLTT.Common
             this.DoubleBuffered = true;
             this.Name = "TrangChu";
             this.ShowIcon = false;
+            this.Text = "Trang Chủ";
             this.Load += new System.EventHandler(this.TrangChu_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

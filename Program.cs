@@ -1,5 +1,6 @@
 ﻿using QLTT.Common;
 using QLTT.Controls;
+using QLTT.Controls.Admin;
 using QLTT.Controls.User;
 using System;
 using System.Collections.Generic;

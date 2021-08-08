@@ -50,6 +50,10 @@ namespace QLTT
             this.textBoxTongTien = new System.Windows.Forms.TextBox();
             this.labelTongTien = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.BTNHuy = new FontAwesome.Sharp.IconButton();
+            this.BTNInHD = new FontAwesome.Sharp.IconButton();
+            this.BTNLuu = new FontAwesome.Sharp.IconButton();
+            this.BTNThemThuoc = new FontAwesome.Sharp.IconButton();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBoxDonGia = new System.Windows.Forms.TextBox();
@@ -66,10 +70,6 @@ namespace QLTT
             this.comboBoxMaThuoc = new System.Windows.Forms.ComboBox();
             this.label_MaThuoc = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BTNHuy = new FontAwesome.Sharp.IconButton();
-            this.BTNInHD = new FontAwesome.Sharp.IconButton();
-            this.BTNLuu = new FontAwesome.Sharp.IconButton();
-            this.BTNThemThuoc = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -357,6 +357,81 @@ namespace QLTT
             this.panel9.Size = new System.Drawing.Size(794, 38);
             this.panel9.TabIndex = 17;
             // 
+            // BTNHuy
+            // 
+            this.BTNHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNHuy.FlatAppearance.BorderSize = 0;
+            this.BTNHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNHuy.ForeColor = System.Drawing.Color.White;
+            this.BTNHuy.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BTNHuy.IconColor = System.Drawing.Color.White;
+            this.BTNHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNHuy.IconSize = 40;
+            this.BTNHuy.Location = new System.Drawing.Point(239, 0);
+            this.BTNHuy.Name = "BTNHuy";
+            this.BTNHuy.Size = new System.Drawing.Size(146, 35);
+            this.BTNHuy.TabIndex = 7;
+            this.BTNHuy.Text = "Hủy";
+            this.BTNHuy.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNHuy.UseVisualStyleBackColor = true;
+            // 
+            // BTNInHD
+            // 
+            this.BTNInHD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNInHD.FlatAppearance.BorderSize = 0;
+            this.BTNInHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNInHD.ForeColor = System.Drawing.Color.White;
+            this.BTNInHD.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.BTNInHD.IconColor = System.Drawing.Color.White;
+            this.BTNInHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNInHD.IconSize = 40;
+            this.BTNInHD.Location = new System.Drawing.Point(639, 0);
+            this.BTNInHD.Name = "BTNInHD";
+            this.BTNInHD.Size = new System.Drawing.Size(146, 35);
+            this.BTNInHD.TabIndex = 9;
+            this.BTNInHD.Text = "In Hóa Đơn";
+            this.BTNInHD.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNInHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNInHD.UseVisualStyleBackColor = true;
+            // 
+            // BTNLuu
+            // 
+            this.BTNLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNLuu.FlatAppearance.BorderSize = 0;
+            this.BTNLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNLuu.ForeColor = System.Drawing.Color.White;
+            this.BTNLuu.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.BTNLuu.IconColor = System.Drawing.Color.White;
+            this.BTNLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNLuu.IconSize = 40;
+            this.BTNLuu.Location = new System.Drawing.Point(457, 3);
+            this.BTNLuu.Name = "BTNLuu";
+            this.BTNLuu.Size = new System.Drawing.Size(146, 32);
+            this.BTNLuu.TabIndex = 8;
+            this.BTNLuu.Text = "Lưu";
+            this.BTNLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNLuu.UseVisualStyleBackColor = true;
+            // 
+            // BTNThemThuoc
+            // 
+            this.BTNThemThuoc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNThemThuoc.FlatAppearance.BorderSize = 0;
+            this.BTNThemThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNThemThuoc.ForeColor = System.Drawing.Color.White;
+            this.BTNThemThuoc.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.BTNThemThuoc.IconColor = System.Drawing.Color.White;
+            this.BTNThemThuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNThemThuoc.IconSize = 40;
+            this.BTNThemThuoc.Location = new System.Drawing.Point(18, 0);
+            this.BTNThemThuoc.Name = "BTNThemThuoc";
+            this.BTNThemThuoc.Size = new System.Drawing.Size(146, 35);
+            this.BTNThemThuoc.TabIndex = 6;
+            this.BTNThemThuoc.Text = "Thêm";
+            this.BTNThemThuoc.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BTNThemThuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTNThemThuoc.UseVisualStyleBackColor = true;
+            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.panel3);
@@ -540,81 +615,6 @@ namespace QLTT
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.TabStop = false;
             // 
-            // BTNHuy
-            // 
-            this.BTNHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNHuy.FlatAppearance.BorderSize = 0;
-            this.BTNHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNHuy.ForeColor = System.Drawing.Color.White;
-            this.BTNHuy.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.BTNHuy.IconColor = System.Drawing.Color.White;
-            this.BTNHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNHuy.IconSize = 40;
-            this.BTNHuy.Location = new System.Drawing.Point(239, 0);
-            this.BTNHuy.Name = "BTNHuy";
-            this.BTNHuy.Size = new System.Drawing.Size(146, 35);
-            this.BTNHuy.TabIndex = 7;
-            this.BTNHuy.Text = "Hủy";
-            this.BTNHuy.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNHuy.UseVisualStyleBackColor = true;
-            // 
-            // BTNInHD
-            // 
-            this.BTNInHD.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNInHD.FlatAppearance.BorderSize = 0;
-            this.BTNInHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNInHD.ForeColor = System.Drawing.Color.White;
-            this.BTNInHD.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.BTNInHD.IconColor = System.Drawing.Color.White;
-            this.BTNInHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNInHD.IconSize = 40;
-            this.BTNInHD.Location = new System.Drawing.Point(639, 0);
-            this.BTNInHD.Name = "BTNInHD";
-            this.BTNInHD.Size = new System.Drawing.Size(146, 35);
-            this.BTNInHD.TabIndex = 9;
-            this.BTNInHD.Text = "In Hóa Đơn";
-            this.BTNInHD.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNInHD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNInHD.UseVisualStyleBackColor = true;
-            // 
-            // BTNLuu
-            // 
-            this.BTNLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNLuu.FlatAppearance.BorderSize = 0;
-            this.BTNLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNLuu.ForeColor = System.Drawing.Color.White;
-            this.BTNLuu.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.BTNLuu.IconColor = System.Drawing.Color.White;
-            this.BTNLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNLuu.IconSize = 40;
-            this.BTNLuu.Location = new System.Drawing.Point(457, 3);
-            this.BTNLuu.Name = "BTNLuu";
-            this.BTNLuu.Size = new System.Drawing.Size(146, 32);
-            this.BTNLuu.TabIndex = 8;
-            this.BTNLuu.Text = "Lưu";
-            this.BTNLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNLuu.UseVisualStyleBackColor = true;
-            // 
-            // BTNThemThuoc
-            // 
-            this.BTNThemThuoc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNThemThuoc.FlatAppearance.BorderSize = 0;
-            this.BTNThemThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNThemThuoc.ForeColor = System.Drawing.Color.White;
-            this.BTNThemThuoc.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.BTNThemThuoc.IconColor = System.Drawing.Color.White;
-            this.BTNThemThuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNThemThuoc.IconSize = 40;
-            this.BTNThemThuoc.Location = new System.Drawing.Point(18, 0);
-            this.BTNThemThuoc.Name = "BTNThemThuoc";
-            this.BTNThemThuoc.Size = new System.Drawing.Size(146, 35);
-            this.BTNThemThuoc.TabIndex = 6;
-            this.BTNThemThuoc.Text = "Thêm";
-            this.BTNThemThuoc.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BTNThemThuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BTNThemThuoc.UseVisualStyleBackColor = true;
-            // 
             // LapHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,7 +624,7 @@ namespace QLTT
             this.Controls.Add(this.splitContainer1);
             this.Name = "LapHoaDon";
             this.ShowIcon = false;
-            this.Text = " ";
+            this.Text = " Lập Hóa Đơn";
             this.Load += new System.EventHandler(this.LapHoaDon_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

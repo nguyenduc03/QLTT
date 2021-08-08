@@ -42,6 +42,8 @@ namespace QLTT.Controls
             this.BTNTimKiem = new FontAwesome.Sharp.IconButton();
             this.TBTimKiem = new System.Windows.Forms.TextBox();
             this.panelChucNang = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BTNChonAnh = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DateNV = new System.Windows.Forms.DateTimePicker();
@@ -67,8 +69,6 @@ namespace QLTT.Controls
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.labelTieuDe = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             BTNSXTuoi = new FontAwesome.Sharp.IconButton();
             this.panelNoiDung.SuspendLayout();
             this.panelSapXep.SuspendLayout();
@@ -284,6 +284,28 @@ namespace QLTT.Controls
             this.panelChucNang.Size = new System.Drawing.Size(804, 231);
             this.panelChucNang.TabIndex = 3;
             this.panelChucNang.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChucNang_Paint);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(154, 199);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 199);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 16);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Cấp Quyền Admin : ";
             // 
             // BTNChonAnh
             // 
@@ -620,27 +642,6 @@ namespace QLTT.Controls
             this.labelTieuDe.TabIndex = 0;
             this.labelTieuDe.Text = "Quản Lý Nhân Viên";
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 199);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Cấp Quyền Admin : ";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(154, 199);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 19;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -651,6 +652,8 @@ namespace QLTT.Controls
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "QuanLyNhanVien";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Nhân Viên";
             this.panelNoiDung.ResumeLayout(false);
             this.panelSapXep.ResumeLayout(false);
             this.panelSapXep.PerformLayout();

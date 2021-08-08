@@ -91,7 +91,7 @@ namespace QLTT.Controls
             this.textBox2.BackColor = System.Drawing.Color.Silver;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBox2.Location = new System.Drawing.Point(521, 84);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -119,7 +119,7 @@ namespace QLTT.Controls
             this.textBox1.BackColor = System.Drawing.Color.Silver;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
+            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.textBox1.Location = new System.Drawing.Point(283, 84);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -334,6 +334,7 @@ namespace QLTT.Controls
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.panel7.Controls.Add(this.BTNLuu);
             this.panel7.Controls.Add(this.BTNHuy);
             this.panel7.Controls.Add(this.BTNReset);
@@ -411,6 +412,7 @@ namespace QLTT.Controls
             this.Controls.Add(this.panel1);
             this.Name = "HoSoCaNhan";
             this.ShowIcon = false;
+            this.Text = "Hồ Sơ Cá Nhân";
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HinhNV)).EndInit();
