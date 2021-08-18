@@ -1,4 +1,7 @@
-﻿using QLTT.Controls;
+﻿using QLTT.Common;
+using QLTT.Controls;
+using QLTT.Controls.Admin;
+using QLTT.Controls.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +14,13 @@ namespace QLTT
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
+        /// </summary> 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyNhanVien());
+            Application.Run(new UserForm());
         }
     }
 }

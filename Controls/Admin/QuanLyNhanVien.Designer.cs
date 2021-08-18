@@ -32,10 +32,18 @@ namespace QLTT.Controls
             FontAwesome.Sharp.IconButton BTNSXTuoi;
             this.panelNoiDung = new System.Windows.Forms.Panel();
             this.panelSapXep = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BTNSXMa = new FontAwesome.Sharp.IconButton();
+            this.BTNSXEmail = new FontAwesome.Sharp.IconButton();
             this.BTNSXTen = new FontAwesome.Sharp.IconButton();
             this.BTNTimKiem = new FontAwesome.Sharp.IconButton();
             this.TBTimKiem = new System.Windows.Forms.TextBox();
             this.panelChucNang = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.BTNChonAnh = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DateNV = new System.Windows.Forms.DateTimePicker();
@@ -61,12 +69,6 @@ namespace QLTT.Controls
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.labelTieuDe = new System.Windows.Forms.Label();
-            this.BTNSXEmail = new FontAwesome.Sharp.IconButton();
-            this.BTNSXMa = new FontAwesome.Sharp.IconButton();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             BTNSXTuoi = new FontAwesome.Sharp.IconButton();
             this.panelNoiDung.SuspendLayout();
             this.panelSapXep.SuspendLayout();
@@ -75,6 +77,26 @@ namespace QLTT.Controls
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelTieuDe.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // BTNSXTuoi
+            // 
+            BTNSXTuoi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            BTNSXTuoi.FlatAppearance.BorderSize = 0;
+            BTNSXTuoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BTNSXTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            BTNSXTuoi.ForeColor = System.Drawing.Color.White;
+            BTNSXTuoi.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
+            BTNSXTuoi.IconColor = System.Drawing.Color.White;
+            BTNSXTuoi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            BTNSXTuoi.IconSize = 20;
+            BTNSXTuoi.Location = new System.Drawing.Point(133, 1);
+            BTNSXTuoi.Name = "BTNSXTuoi";
+            BTNSXTuoi.Size = new System.Drawing.Size(142, 32);
+            BTNSXTuoi.TabIndex = 13;
+            BTNSXTuoi.Text = "Sắp xếp theo tuổi";
+            BTNSXTuoi.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            BTNSXTuoi.UseVisualStyleBackColor = true;
+            BTNSXTuoi.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // panelNoiDung
             // 
@@ -102,10 +124,85 @@ namespace QLTT.Controls
             this.panelSapXep.Controls.Add(this.BTNTimKiem);
             this.panelSapXep.Controls.Add(this.TBTimKiem);
             this.panelSapXep.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSapXep.Location = new System.Drawing.Point(6, 252);
+            this.panelSapXep.Location = new System.Drawing.Point(6, 286);
             this.panelSapXep.Name = "panelSapXep";
             this.panelSapXep.Size = new System.Drawing.Size(804, 49);
             this.panelSapXep.TabIndex = 4;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(429, 25);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(115, 2);
+            this.panel9.TabIndex = 23;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(291, 25);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(100, 2);
+            this.panel8.TabIndex = 17;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(154, 25);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(100, 2);
+            this.panel7.TabIndex = 17;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Location = new System.Drawing.Point(17, 25);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(100, 2);
+            this.panel6.TabIndex = 16;
+            // 
+            // BTNSXMa
+            // 
+            this.BTNSXMa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNSXMa.FlatAppearance.BorderSize = 0;
+            this.BTNSXMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNSXMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNSXMa.ForeColor = System.Drawing.Color.White;
+            this.BTNSXMa.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
+            this.BTNSXMa.IconColor = System.Drawing.Color.White;
+            this.BTNSXMa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNSXMa.IconSize = 20;
+            this.BTNSXMa.Location = new System.Drawing.Point(271, 1);
+            this.BTNSXMa.Name = "BTNSXMa";
+            this.BTNSXMa.Size = new System.Drawing.Size(142, 31);
+            this.BTNSXMa.TabIndex = 14;
+            this.BTNSXMa.Text = "Sắp xếp theo mã";
+            this.BTNSXMa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BTNSXMa.UseVisualStyleBackColor = true;
+            // 
+            // BTNSXEmail
+            // 
+            this.BTNSXEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BTNSXEmail.FlatAppearance.BorderSize = 0;
+            this.BTNSXEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNSXEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNSXEmail.ForeColor = System.Drawing.Color.White;
+            this.BTNSXEmail.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
+            this.BTNSXEmail.IconColor = System.Drawing.Color.White;
+            this.BTNSXEmail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BTNSXEmail.IconSize = 20;
+            this.BTNSXEmail.Location = new System.Drawing.Point(408, 1);
+            this.BTNSXEmail.Name = "BTNSXEmail";
+            this.BTNSXEmail.Size = new System.Drawing.Size(151, 31);
+            this.BTNSXEmail.TabIndex = 15;
+            this.BTNSXEmail.Text = "Sắp xếp theo email";
+            this.BTNSXEmail.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.BTNSXEmail.UseVisualStyleBackColor = true;
             // 
             // BTNSXTen
             // 
@@ -157,6 +254,8 @@ namespace QLTT.Controls
             // 
             // panelChucNang
             // 
+            this.panelChucNang.Controls.Add(this.checkBox1);
+            this.panelChucNang.Controls.Add(this.label1);
             this.panelChucNang.Controls.Add(this.BTNChonAnh);
             this.panelChucNang.Controls.Add(this.pictureBox1);
             this.panelChucNang.Controls.Add(this.DateNV);
@@ -182,9 +281,31 @@ namespace QLTT.Controls
             this.panelChucNang.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelChucNang.Location = new System.Drawing.Point(6, 55);
             this.panelChucNang.Name = "panelChucNang";
-            this.panelChucNang.Size = new System.Drawing.Size(804, 197);
+            this.panelChucNang.Size = new System.Drawing.Size(804, 231);
             this.panelChucNang.TabIndex = 3;
             this.panelChucNang.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChucNang_Paint);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(154, 199);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 199);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 16);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Cấp Quyền Admin : ";
             // 
             // BTNChonAnh
             // 
@@ -197,7 +318,7 @@ namespace QLTT.Controls
             this.BTNChonAnh.IconColor = System.Drawing.Color.White;
             this.BTNChonAnh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNChonAnh.IconSize = 30;
-            this.BTNChonAnh.Location = new System.Drawing.Point(368, 156);
+            this.BTNChonAnh.Location = new System.Drawing.Point(368, 173);
             this.BTNChonAnh.Name = "BTNChonAnh";
             this.BTNChonAnh.Size = new System.Drawing.Size(117, 31);
             this.BTNChonAnh.TabIndex = 5;
@@ -215,8 +336,9 @@ namespace QLTT.Controls
             // 
             // DateNV
             // 
+            this.DateNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DateNV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateNV.Location = new System.Drawing.Point(96, 156);
+            this.DateNV.Location = new System.Drawing.Point(97, 161);
             this.DateNV.Name = "DateNV";
             this.DateNV.Size = new System.Drawing.Size(146, 20);
             this.DateNV.TabIndex = 4;
@@ -224,17 +346,19 @@ namespace QLTT.Controls
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(42, 134);
+            this.panel5.Location = new System.Drawing.Point(43, 139);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 2);
             this.panel5.TabIndex = 15;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 160);
+            this.label4.Location = new System.Drawing.Point(17, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 16);
             this.label4.TabIndex = 13;
@@ -243,11 +367,12 @@ namespace QLTT.Controls
             // 
             // TBEmailNV
             // 
+            this.TBEmailNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TBEmailNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.TBEmailNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TBEmailNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBEmailNV.ForeColor = System.Drawing.Color.White;
-            this.TBEmailNV.Location = new System.Drawing.Point(73, 116);
+            this.TBEmailNV.Location = new System.Drawing.Point(74, 121);
             this.TBEmailNV.Multiline = true;
             this.TBEmailNV.Name = "TBEmailNV";
             this.TBEmailNV.Size = new System.Drawing.Size(169, 20);
@@ -255,17 +380,19 @@ namespace QLTT.Controls
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(42, 101);
+            this.panel4.Location = new System.Drawing.Point(43, 106);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 2);
             this.panel4.TabIndex = 15;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 115);
+            this.label3.Location = new System.Drawing.Point(17, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 13;
@@ -274,28 +401,31 @@ namespace QLTT.Controls
             // 
             // TBSDTNV
             // 
+            this.TBSDTNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TBSDTNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.TBSDTNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TBSDTNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBSDTNV.ForeColor = System.Drawing.Color.White;
-            this.TBSDTNV.Location = new System.Drawing.Point(119, 83);
+            this.TBSDTNV.Location = new System.Drawing.Point(120, 88);
             this.TBSDTNV.Name = "TBSDTNV";
             this.TBSDTNV.Size = new System.Drawing.Size(109, 15);
             this.TBSDTNV.TabIndex = 2;
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(42, 68);
+            this.panel3.Location = new System.Drawing.Point(43, 73);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 2);
             this.panel3.TabIndex = 15;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 83);
+            this.label2.Location = new System.Drawing.Point(17, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 16);
             this.label2.TabIndex = 13;
@@ -303,11 +433,12 @@ namespace QLTT.Controls
             // 
             // TBTenNV
             // 
+            this.TBTenNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TBTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.TBTenNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TBTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBTenNV.ForeColor = System.Drawing.Color.White;
-            this.TBTenNV.Location = new System.Drawing.Point(119, 49);
+            this.TBTenNV.Location = new System.Drawing.Point(120, 54);
             this.TBTenNV.Multiline = true;
             this.TBTenNV.Name = "TBTenNV";
             this.TBTenNV.Size = new System.Drawing.Size(109, 20);
@@ -315,9 +446,10 @@ namespace QLTT.Controls
             // 
             // labelTênNV
             // 
+            this.labelTênNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTênNV.AutoSize = true;
             this.labelTênNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTênNV.Location = new System.Drawing.Point(16, 50);
+            this.labelTênNV.Location = new System.Drawing.Point(17, 55);
             this.labelTênNV.Name = "labelTênNV";
             this.labelTênNV.Size = new System.Drawing.Size(106, 16);
             this.labelTênNV.TabIndex = 13;
@@ -325,8 +457,9 @@ namespace QLTT.Controls
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(42, 33);
+            this.panel2.Location = new System.Drawing.Point(43, 38);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 2);
             this.panel2.TabIndex = 12;
@@ -334,11 +467,12 @@ namespace QLTT.Controls
             // 
             // TBMaNV
             // 
+            this.TBMaNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TBMaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(49)))), ((int)(((byte)(49)))));
             this.TBMaNV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TBMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TBMaNV.ForeColor = System.Drawing.Color.White;
-            this.TBMaNV.Location = new System.Drawing.Point(119, 14);
+            this.TBMaNV.Location = new System.Drawing.Point(120, 19);
             this.TBMaNV.Multiline = true;
             this.TBMaNV.Name = "TBMaNV";
             this.TBMaNV.Size = new System.Drawing.Size(109, 20);
@@ -348,9 +482,10 @@ namespace QLTT.Controls
             // 
             // labelMaNV
             // 
+            this.labelMaNV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelMaNV.AutoSize = true;
             this.labelMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaNV.Location = new System.Drawing.Point(16, 15);
+            this.labelMaNV.Location = new System.Drawing.Point(17, 20);
             this.labelMaNV.Name = "labelMaNV";
             this.labelMaNV.Size = new System.Drawing.Size(101, 16);
             this.labelMaNV.TabIndex = 10;
@@ -368,7 +503,7 @@ namespace QLTT.Controls
             this.BTNReset.IconColor = System.Drawing.Color.White;
             this.BTNReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNReset.IconSize = 40;
-            this.BTNReset.Location = new System.Drawing.Point(698, 79);
+            this.BTNReset.Location = new System.Drawing.Point(698, 96);
             this.BTNReset.Name = "BTNReset";
             this.BTNReset.Size = new System.Drawing.Size(100, 35);
             this.BTNReset.TabIndex = 9;
@@ -387,7 +522,7 @@ namespace QLTT.Controls
             this.BTNSua.IconColor = System.Drawing.Color.White;
             this.BTNSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNSua.IconSize = 40;
-            this.BTNSua.Location = new System.Drawing.Point(581, 79);
+            this.BTNSua.Location = new System.Drawing.Point(581, 96);
             this.BTNSua.Name = "BTNSua";
             this.BTNSua.Size = new System.Drawing.Size(100, 35);
             this.BTNSua.TabIndex = 8;
@@ -407,7 +542,7 @@ namespace QLTT.Controls
             this.BTNHuy.IconColor = System.Drawing.Color.White;
             this.BTNHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNHuy.IconSize = 40;
-            this.BTNHuy.Location = new System.Drawing.Point(581, 145);
+            this.BTNHuy.Location = new System.Drawing.Point(581, 162);
             this.BTNHuy.Name = "BTNHuy";
             this.BTNHuy.Size = new System.Drawing.Size(100, 35);
             this.BTNHuy.TabIndex = 10;
@@ -427,7 +562,7 @@ namespace QLTT.Controls
             this.BTNThemThuoc.IconColor = System.Drawing.Color.White;
             this.BTNThemThuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNThemThuoc.IconSize = 40;
-            this.BTNThemThuoc.Location = new System.Drawing.Point(581, 18);
+            this.BTNThemThuoc.Location = new System.Drawing.Point(581, 35);
             this.BTNThemThuoc.Name = "BTNThemThuoc";
             this.BTNThemThuoc.Size = new System.Drawing.Size(100, 35);
             this.BTNThemThuoc.TabIndex = 6;
@@ -447,7 +582,7 @@ namespace QLTT.Controls
             this.BTNXoa.IconColor = System.Drawing.Color.White;
             this.BTNXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNXoa.IconSize = 40;
-            this.BTNXoa.Location = new System.Drawing.Point(698, 18);
+            this.BTNXoa.Location = new System.Drawing.Point(698, 35);
             this.BTNXoa.Name = "BTNXoa";
             this.BTNXoa.Size = new System.Drawing.Size(100, 35);
             this.BTNXoa.TabIndex = 7;
@@ -467,7 +602,7 @@ namespace QLTT.Controls
             this.BTNLuu.IconColor = System.Drawing.Color.White;
             this.BTNLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BTNLuu.IconSize = 40;
-            this.BTNLuu.Location = new System.Drawing.Point(698, 145);
+            this.BTNLuu.Location = new System.Drawing.Point(698, 162);
             this.BTNLuu.Name = "BTNLuu";
             this.BTNLuu.Size = new System.Drawing.Size(100, 35);
             this.BTNLuu.TabIndex = 11;
@@ -498,6 +633,7 @@ namespace QLTT.Controls
             // 
             // labelTieuDe
             // 
+            this.labelTieuDe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTieuDe.AutoSize = true;
             this.labelTieuDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTieuDe.Location = new System.Drawing.Point(315, 12);
@@ -505,101 +641,6 @@ namespace QLTT.Controls
             this.labelTieuDe.Size = new System.Drawing.Size(219, 26);
             this.labelTieuDe.TabIndex = 0;
             this.labelTieuDe.Text = "Quản Lý Nhân Viên";
-            // 
-            // BTNSXEmail
-            // 
-            this.BTNSXEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNSXEmail.FlatAppearance.BorderSize = 0;
-            this.BTNSXEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNSXEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSXEmail.ForeColor = System.Drawing.Color.White;
-            this.BTNSXEmail.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
-            this.BTNSXEmail.IconColor = System.Drawing.Color.White;
-            this.BTNSXEmail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNSXEmail.IconSize = 20;
-            this.BTNSXEmail.Location = new System.Drawing.Point(408, 1);
-            this.BTNSXEmail.Name = "BTNSXEmail";
-            this.BTNSXEmail.Size = new System.Drawing.Size(151, 31);
-            this.BTNSXEmail.TabIndex = 15;
-            this.BTNSXEmail.Text = "Sắp xếp theo email";
-            this.BTNSXEmail.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BTNSXEmail.UseVisualStyleBackColor = true;
-            // 
-            // BTNSXMa
-            // 
-            this.BTNSXMa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BTNSXMa.FlatAppearance.BorderSize = 0;
-            this.BTNSXMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNSXMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNSXMa.ForeColor = System.Drawing.Color.White;
-            this.BTNSXMa.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
-            this.BTNSXMa.IconColor = System.Drawing.Color.White;
-            this.BTNSXMa.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BTNSXMa.IconSize = 20;
-            this.BTNSXMa.Location = new System.Drawing.Point(271, 1);
-            this.BTNSXMa.Name = "BTNSXMa";
-            this.BTNSXMa.Size = new System.Drawing.Size(142, 31);
-            this.BTNSXMa.TabIndex = 14;
-            this.BTNSXMa.Text = "Sắp xếp theo mã";
-            this.BTNSXMa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.BTNSXMa.UseVisualStyleBackColor = true;
-            // 
-            // BTNSXTuoi
-            // 
-            BTNSXTuoi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            BTNSXTuoi.FlatAppearance.BorderSize = 0;
-            BTNSXTuoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BTNSXTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            BTNSXTuoi.ForeColor = System.Drawing.Color.White;
-            BTNSXTuoi.IconChar = FontAwesome.Sharp.IconChar.ArrowUp;
-            BTNSXTuoi.IconColor = System.Drawing.Color.White;
-            BTNSXTuoi.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            BTNSXTuoi.IconSize = 20;
-            BTNSXTuoi.Location = new System.Drawing.Point(133, 1);
-            BTNSXTuoi.Name = "BTNSXTuoi";
-            BTNSXTuoi.Size = new System.Drawing.Size(142, 32);
-            BTNSXTuoi.TabIndex = 13;
-            BTNSXTuoi.Text = "Sắp xếp theo tuổi";
-            BTNSXTuoi.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            BTNSXTuoi.UseVisualStyleBackColor = true;
-            BTNSXTuoi.Click += new System.EventHandler(this.iconButton7_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(17, 25);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(100, 2);
-            this.panel6.TabIndex = 16;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(154, 25);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(100, 2);
-            this.panel7.TabIndex = 17;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(291, 25);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(100, 2);
-            this.panel8.TabIndex = 17;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
-            // 
-            // panel9
-            // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(429, 25);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(115, 2);
-            this.panel9.TabIndex = 23;
             // 
             // QuanLyNhanVien
             // 
@@ -611,6 +652,8 @@ namespace QLTT.Controls
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "QuanLyNhanVien";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Nhân Viên";
             this.panelNoiDung.ResumeLayout(false);
             this.panelSapXep.ResumeLayout(false);
             this.panelSapXep.PerformLayout();
@@ -662,5 +705,7 @@ namespace QLTT.Controls
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
